@@ -6,7 +6,8 @@ Todos los cambios relevantes del proyecto se registran acá. El formato sigue [K
 
 ### Catálogo
 
-- `Y44` pasa a llamarse `Fresh Yellow`, como dice el marcador físico (las tiendas lo listan como `Fresh Green`; ver D-018), y su color cambia de verde lima a amarillo mostaza (`#E0BF00`, estimado desde una imagen de producto).
+- **Todos los colores se tomaron de la carta oficial de 204 colores** (D-019). La lista anterior usaba en su mayoría colores genéricos: 145 de 204 se veían distintos y 87 eran directamente otro color (por ejemplo `PB183 Phthalo Blue`, `PB73 Ultramarine Blue`, `B65 Ice Blue` y los grises `CG`, `WG` y `GG`, que se veían demasiado oscuros).
+- `Y44` pasa a llamarse `Fresh Yellow`, como dice el marcador físico (las tiendas y la carta lo listan como `Fresh Green`; ver D-018).
 
 ## [0.1.0] — 2026-11-01
 

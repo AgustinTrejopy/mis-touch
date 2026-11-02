@@ -51,7 +51,7 @@ En Safari: botón **Compartir → Agregar a pantalla de inicio**. *(No probado e
 
 ## El catálogo
 
-El catálogo tiene **204 colores**. Se genera a partir de una lista de origen que no se modifica, más un archivo de correcciones donde cada cambio cita su fuente. Los colores en pantalla son **aproximaciones digitales**, no valores oficiales del fabricante: pueden diferir de la tinta real según la pantalla.
+El catálogo tiene **204 colores**. Se genera a partir de una lista de origen que no se modifica, más un archivo de correcciones donde cada cambio cita su fuente. Los colores se tomaron de la **carta de colores de 204** de TOUCH Twin. Aun así son **aproximaciones digitales**: pueden diferir de la tinta real según la pantalla.
 
 Detalles, fuentes y cómo proponer una corrección: [docs/DATA_CATALOG.md](docs/DATA_CATALOG.md).
 

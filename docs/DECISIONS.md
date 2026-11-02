@@ -96,7 +96,7 @@ Las decisiones aceptadas se mantienen aquí. Para cambiar una decisión, agregar
   - `TouchColor.hex` admite `null` solo en registros agregados desde referencias; esas tarjetas se muestran rayadas, sin inventar color.
   - El total se sigue derivando de `catalog.length`.
 
-## D-015 — HEX estimados desde imagen para GY172 y GY173
+## D-015 — HEX estimados desde imagen para GY172 y GY173 (reemplazada por D-019)
 
 - **Estado:** Aceptada (2026-11-01), a pedido del usuario.
 - **Decisión:** usar el color promedio de la muestra de imágenes de producto de tiendas (no incluidas en el repositorio por ser de terceros) y marcarlos con `hexEstimated: true` y referencias a esas imágenes. Reemplaza el rayado "sin muestra" de D-014 para estos dos códigos; el soporte para `hex: null` sigue disponible para casos futuros.
@@ -131,4 +131,16 @@ Las decisiones aceptadas se mantienen aquí. Para cambiar una decisión, agregar
 - **Estado:** Aceptada (2026-11-02) por decisión del mantenedor.
 - **Contexto:** la lista de origen y las dos tiendas de referencia nombran al 44 `Y44 Fresh Green`. El marcador físico de la colección de la persona usuaria dice `Fresh Yellow`.
 - **Decisión:** se usa `Fresh Yellow`, priorizando el marcador físico que existe en la colección. Queda como cambio trazado en `data/catalog-corrections.json`, con estado `provided` (no `cross-checked`) y una nota que deja explícita la contradicción con las tiendas.
-- **Color:** el HEX de origen (`#D4E157`, verde lima) se reemplaza por `#E0BF00` (amarillo mostaza), estimado desde la muestra de una imagen de producto (`hexEstimated: true`). Para eso las correcciones de tipo `changes` admiten ahora el campo `hex`.
+- **Color:** primero se estimó `#E0BF00` desde una imagen de producto; desde D-019 usa el HEX de la carta de colores (`#E8CD00`). Las correcciones de tipo `changes` admiten el campo `hex` para casos puntuales.
+
+## D-019 — Todos los HEX salen de la carta de colores (reemplaza D-015)
+
+- **Estado:** Aceptada (2026-11-02) por decisión del mantenedor.
+- **Contexto:** la persona usuaria notó que WG8 y Y44 no coincidían con sus marcadores. Con la carta "TOUCH TWIN MARKER / BRUSH MARKER — COLOR CHART 204 colors" se comprobó que la mayoría de los HEX de la lista de origen eran colores de la paleta Material Design asignados a ojo: 145 de 204 difieren de forma visible (ΔE2000 ≥ 3) y 87 son directamente otro color (ΔE ≥ 12).
+- **Decisión:** `data/catalog-corrections.json` incorpora la sección `chartHex`, con el HEX medido de la carta para cada uno de los 204 códigos (promedio de una zona central de cada muestra). Se aplica después de cambios y agregados, conserva el HEX anterior en la nota de cada registro y cita la referencia `shinhan-chart`. La lista de origen no se modifica.
+- **Nombres:** la carta coincide con los 204 códigos del catálogo. Los nombres corregidos se mantienen, incluido `Y44 Fresh Yellow` (D-018), aunque la carta diga `Fresh Green`.
+- **Consecuencias:**
+  - `GY172`, `GY173` y `Y44` dejan de tener HEX estimados desde fotos de producto; ya no hay colores con `hexEstimated`.
+  - La escala WG queda ordenada de claro a oscuro (verificado por test), igual que CG y GG.
+  - La imagen de la carta no se incluye en el repositorio por ser material de terceros.
+  - Los HEX siguen siendo la versión digital de la carta, no mediciones de la tinta.

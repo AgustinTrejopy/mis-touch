@@ -56,6 +56,8 @@ export interface CatalogCorrections {
     note: string;
     references: string[];
   }[];
+  /** HEX medidos de una carta de colores: código vigente → HEX. Se aplica después de cambios y agregados. */
+  chartHex?: { references: string[]; colors: Record<string, string> };
 }
 
 export interface DerivedCatalog {
@@ -144,6 +146,20 @@ export function buildCatalog(rows: readonly SourceRow[], corrections: CatalogCor
       note: addition.note,
       references: addition.references,
     });
+  }
+
+  if (corrections.chartHex) {
+    const { references, colors: chart } = corrections.chartHex;
+    for (const [id, hex] of Object.entries(chart)) {
+      const color = find(id);
+      if (color.hex === hex) continue;
+      const previous = color.hex === null ? 'sin HEX' : `antes ${color.hex}`;
+      color.hex = hex;
+      delete color.hexEstimated;
+      color.verificationStatus = 'cross-checked';
+      color.note = [color.note, `HEX de la carta de colores (${previous}).`].filter(Boolean).join(' ');
+      color.references = [...new Set([...(color.references ?? []), ...references])];
+    }
   }
 
   for (const annotation of corrections.annotations ?? []) {

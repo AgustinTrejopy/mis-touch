@@ -9,474 +9,659 @@
       "family": "R",
       "number": "1",
       "name": "Wine Red",
-      "hex": "#8B0021",
+      "hex": "#85213B",
       "source": "user-csv",
       "sourceLine": 2,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #8B0021).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R2",
       "family": "R",
       "number": "2",
       "name": "Old Red",
-      "hex": "#A4343A",
+      "hex": "#B00551",
       "source": "user-csv",
       "sourceLine": 3,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #A4343A).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R3",
       "family": "R",
       "number": "3",
       "name": "Rose Red",
-      "hex": "#C22649",
+      "hex": "#D3005F",
       "source": "user-csv",
       "sourceLine": 4,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #C22649).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R4",
       "family": "R",
       "number": "4",
       "name": "Vivid Red",
-      "hex": "#E6002B",
+      "hex": "#E62458",
       "source": "user-csv",
       "sourceLine": 5,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E6002B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R5",
       "family": "R",
       "number": "5",
       "name": "Cherry Pink",
-      "hex": "#E8385D",
+      "hex": "#E9346B",
       "source": "user-csv",
       "sourceLine": 6,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E8385D).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R8",
       "family": "R",
       "number": "8",
       "name": "Rose Pink",
-      "hex": "#F06292",
+      "hex": "#F08A97",
       "source": "user-csv",
       "sourceLine": 7,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F06292).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R10",
       "family": "R",
       "number": "10",
       "name": "Deep Red",
-      "hex": "#B71C1C",
+      "hex": "#E4004D",
       "source": "user-csv",
       "sourceLine": 8,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #B71C1C).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R11",
       "family": "R",
       "number": "11",
       "name": "Carmine",
-      "hex": "#D81B3A",
+      "hex": "#E70024",
       "source": "user-csv",
       "sourceLine": 9,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D81B3A).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R12",
       "family": "R",
       "number": "12",
       "name": "Coral Red",
-      "hex": "#E53935",
+      "hex": "#E8373D",
       "source": "user-csv",
       "sourceLine": 10,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E53935).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R13",
       "family": "R",
       "number": "13",
       "name": "Scarlet",
-      "hex": "#FF1744",
+      "hex": "#EA5862",
       "source": "user-csv",
       "sourceLine": 11,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF1744).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R14",
       "family": "R",
       "number": "14",
       "name": "Vermilion",
-      "hex": "#FF3D00",
+      "hex": "#E7381B",
       "source": "user-csv",
       "sourceLine": 12,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF3D00).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R15",
       "family": "R",
       "number": "15",
       "name": "Geranium",
-      "hex": "#E57373",
+      "hex": "#CF112A",
       "source": "user-csv",
       "sourceLine": 13,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E57373).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R16",
       "family": "R",
       "number": "16",
       "name": "Coral Pink",
-      "hex": "#F48FB1",
+      "hex": "#ED6B5E",
       "source": "user-csv",
       "sourceLine": 14,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F48FB1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R18",
       "family": "R",
       "number": "18",
       "name": "Peach",
-      "hex": "#FF8A80",
+      "hex": "#F6BCB8",
       "source": "user-csv",
       "sourceLine": 15,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF8A80).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R22",
       "family": "R",
       "number": "22",
       "name": "French Vermilion",
-      "hex": "#D32F2F",
+      "hex": "#EA5006",
       "source": "user-csv",
       "sourceLine": 16,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D32F2F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R28",
       "family": "R",
       "number": "28",
       "name": "Fruit Pink",
-      "hex": "#FF80AB",
+      "hex": "#FBD6CD",
       "source": "user-csv",
       "sourceLine": 17,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF80AB).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R131",
       "family": "R",
       "number": "131",
       "name": "Skin White",
-      "hex": "#FFE0B2",
+      "hex": "#FDEBE1",
       "source": "user-csv",
       "sourceLine": 18,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFE0B2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R135",
       "family": "R",
       "number": "135",
       "name": "Pale Cherry Pink",
-      "hex": "#F8BBD0",
+      "hex": "#FDE1DE",
       "source": "user-csv",
       "sourceLine": 19,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F8BBD0).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R136",
       "family": "R",
       "number": "136",
       "name": "Blush",
-      "hex": "#FFCDD2",
+      "hex": "#F7C7C5",
       "source": "user-csv",
       "sourceLine": 20,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFCDD2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R139",
       "family": "R",
       "number": "139",
       "name": "Flesh",
-      "hex": "#FFCCBC",
+      "hex": "#F9CEBB",
       "source": "user-csv",
       "sourceLine": 21,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFCCBC).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "R140",
       "family": "R",
       "number": "140",
       "name": "Light Orange",
-      "hex": "#FFB74D",
+      "hex": "#F3A68A",
       "source": "user-csv",
       "sourceLine": 22,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFB74D).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP6",
       "family": "RP",
       "number": "6",
       "name": "Vivid Pink",
-      "hex": "#F50057",
+      "hex": "#EC73A8",
       "source": "user-csv",
       "sourceLine": 23,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F50057).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP7",
       "family": "RP",
       "number": "7",
       "name": "Cosmos",
-      "hex": "#EC407A",
+      "hex": "#F2A1A8",
       "source": "user-csv",
       "sourceLine": 24,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #EC407A).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP9",
       "family": "RP",
       "number": "9",
       "name": "Pale Pink",
-      "hex": "#F8BBD0",
+      "hex": "#F7B6BC",
       "source": "user-csv",
       "sourceLine": 25,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F8BBD0).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP17",
       "family": "RP",
       "number": "17",
       "name": "Pastel Pink",
-      "hex": "#F48FB1",
+      "hex": "#F29DC4",
       "source": "user-csv",
       "sourceLine": 26,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F48FB1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP86",
       "family": "RP",
       "number": "86",
       "name": "Vivid Reddish Purple",
-      "hex": "#C2185B",
+      "hex": "#D71085",
       "source": "user-csv",
       "sourceLine": 27,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #C2185B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP87",
       "family": "RP",
       "number": "87",
       "name": "Azalea Purple",
-      "hex": "#D81B60",
+      "hex": "#CE007F",
       "source": "user-csv",
       "sourceLine": 28,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D81B60).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP89",
       "family": "RP",
       "number": "89",
       "name": "Pale Purple",
-      "hex": "#E1BEE7",
+      "hex": "#EA7AAC",
       "source": "user-csv",
       "sourceLine": 29,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E1BEE7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP137",
       "family": "RP",
       "number": "137",
       "name": "Medium Pink",
-      "hex": "#F06292",
+      "hex": "#F6CBDC",
       "source": "user-csv",
       "sourceLine": 30,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F06292).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP138",
       "family": "RP",
       "number": "138",
       "name": "Light Pink",
-      "hex": "#FF80AB",
+      "hex": "#F8C5D8",
       "source": "user-csv",
       "sourceLine": 31,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF80AB).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP196",
       "family": "RP",
       "number": "196",
       "name": "Pale Pink Light",
-      "hex": "#FCE4EC",
+      "hex": "#FADCE3",
       "source": "user-csv",
       "sourceLine": 32,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FCE4EC).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP198",
       "family": "RP",
       "number": "198",
       "name": "Tender Pink",
-      "hex": "#F8BBD0",
+      "hex": "#F29CB5",
       "source": "user-csv",
       "sourceLine": 33,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F8BBD0).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP291",
       "family": "RP",
       "number": "291",
       "name": "Primary Magenta",
-      "hex": "#E91E63",
+      "hex": "#E42D75",
       "source": "user-csv",
       "sourceLine": 34,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E91E63).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP292",
       "family": "RP",
       "number": "292",
       "name": "Magenta Deep",
-      "hex": "#880E4F",
+      "hex": "#E23182",
       "source": "user-csv",
       "sourceLine": 35,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #880E4F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "RP293",
       "family": "RP",
       "number": "293",
       "name": "Dull Cosmos Purple",
-      "hex": "#AD1457",
+      "hex": "#E9BEC8",
       "source": "user-csv",
       "sourceLine": 36,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #AD1457).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR21",
       "family": "YR",
       "number": "21",
       "name": "Terra Cotta",
-      "hex": "#D84315",
+      "hex": "#D66E0F",
       "source": "user-csv",
       "sourceLine": 37,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D84315).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR23",
       "family": "YR",
       "number": "23",
       "name": "Orange",
-      "hex": "#F7941D",
+      "hex": "#F08300",
       "source": "user-csv",
       "sourceLine": 38,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F7941D).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR24",
       "family": "YR",
       "number": "24",
       "name": "Marigold",
-      "hex": "#FF8F00",
+      "hex": "#F59E00",
       "source": "user-csv",
       "sourceLine": 39,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF8F00).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR25",
       "family": "YR",
       "number": "25",
       "name": "Salmon Pink",
-      "hex": "#FFAB91",
+      "hex": "#FAD3AC",
       "source": "user-csv",
       "sourceLine": 40,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFAB91).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR26",
       "family": "YR",
       "number": "26",
       "name": "Pastel Peach",
-      "hex": "#FFE0B2",
+      "hex": "#FDEACC",
       "source": "user-csv",
       "sourceLine": 41,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFE0B2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR27",
       "family": "YR",
       "number": "27",
       "name": "Powder Pink",
-      "hex": "#FFCCBC",
+      "hex": "#FFE5D4",
       "source": "user-csv",
       "sourceLine": 42,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFCCBC).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR29",
       "family": "YR",
       "number": "29",
       "name": "Barely Beige",
-      "hex": "#FFF3E0",
+      "hex": "#FDEEDB",
       "source": "user-csv",
       "sourceLine": 43,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF3E0).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR31",
       "family": "YR",
       "number": "31",
       "name": "Dark Yellow",
-      "hex": "#FFA000",
+      "hex": "#F1B600",
       "source": "user-csv",
       "sourceLine": 44,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFA000).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR32",
       "family": "YR",
       "number": "32",
       "name": "Deep Yellow",
-      "hex": "#FFB300",
+      "hex": "#F3CD00",
       "source": "user-csv",
       "sourceLine": 45,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFB300).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR33",
       "family": "YR",
       "number": "33",
       "name": "Melon Yellow",
-      "hex": "#FFCA28",
+      "hex": "#F9BE00",
       "source": "user-csv",
       "sourceLine": 46,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFCA28).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR132",
       "family": "YR",
       "number": "132",
       "name": "Milky White",
-      "hex": "#FFF8E1",
+      "hex": "#FEFAEE",
       "source": "user-csv",
       "sourceLine": 47,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF8E1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR133",
       "family": "YR",
       "number": "133",
       "name": "Baby Skin Pink",
-      "hex": "#FFE0B2",
+      "hex": "#FEF0D6",
       "source": "user-csv",
       "sourceLine": 48,
       "verificationStatus": "cross-checked",
-      "note": "Ambas referencias confirman 'YR133 Baby Skin Pink'. 'Soft Peach' en una foto de referencia probablemente pertenece a un set no ShinHan.",
+      "note": "Ambas referencias y la carta de colores confirman 'YR133 Baby Skin Pink'. 'Soft Peach' en una foto de referencia probablemente pertenece a un set no ShinHan. HEX de la carta de colores (antes #FFE0B2).",
       "references": [
         "city-stationery",
-        "asphalt-kreatorz"
+        "asphalt-kreatorz",
+        "shinhan-chart"
       ]
     },
     {
@@ -484,284 +669,382 @@
       "family": "YR",
       "number": "142",
       "name": "Pale Cream",
-      "hex": "#FFFDE7",
+      "hex": "#FCDBA8",
       "source": "user-csv",
       "sourceLine": 49,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFFDE7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "YR211",
       "family": "YR",
       "number": "211",
       "name": "Tiger Lily",
-      "hex": "#FF6F00",
+      "hex": "#EC6816",
       "source": "user-csv",
       "sourceLine": 50,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF6F00).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y34",
       "family": "Y",
       "number": "34",
       "name": "Yellow",
-      "hex": "#FFD600",
+      "hex": "#FFDB01",
       "source": "user-csv",
       "sourceLine": 51,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFD600).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y35",
       "family": "Y",
       "number": "35",
       "name": "Lemon Yellow",
-      "hex": "#FFF200",
+      "hex": "#FFF231",
       "source": "user-csv",
       "sourceLine": 52,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF200).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y36",
       "family": "Y",
       "number": "36",
       "name": "Cream",
-      "hex": "#FFF59D",
+      "hex": "#FEDC78",
       "source": "user-csv",
       "sourceLine": 53,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF59D).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y37",
       "family": "Y",
       "number": "37",
       "name": "Pastel Yellow",
-      "hex": "#FFF59D",
+      "hex": "#FFF562",
       "source": "user-csv",
       "sourceLine": 54,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF59D).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y38",
       "family": "Y",
       "number": "38",
       "name": "Pale Yellow",
-      "hex": "#FFFDE7",
+      "hex": "#FEF898",
       "source": "user-csv",
       "sourceLine": 55,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFFDE7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y41",
       "family": "Y",
       "number": "41",
       "name": "Olive Green",
-      "hex": "#827717",
+      "hex": "#BEA93C",
       "source": "user-csv",
       "sourceLine": 56,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #827717).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y42",
       "family": "Y",
       "number": "42",
       "name": "Bronze Green",
-      "hex": "#9E9D24",
+      "hex": "#7C8556",
       "source": "user-csv",
       "sourceLine": 57,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #9E9D24).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y44",
       "family": "Y",
       "number": "44",
       "name": "Fresh Yellow",
-      "hex": "#E0BF00",
+      "hex": "#E8CD00",
       "source": "user-csv",
       "sourceLine": 58,
       "verificationStatus": "provided",
-      "note": "Nombre 'Fresh Yellow' tomado del marcador físico de la persona usuaria (D-018). Contradice a las tiendas, que listan 'Y44 Fresh Green'. HEX #E0BF00 estimado desde la muestra de una imagen de producto (el CSV decía #D4E157, verde lima).",
+      "note": "Nombre 'Fresh Yellow' tomado del marcador físico de la persona usuaria (D-018). Contradice a las tiendas y a la carta de colores, que dicen 'Y44 Fresh Green'. HEX de la carta de colores (antes #D4E157).",
       "references": [
         "physical-marker-y44",
-        "swatch-y44",
         "city-stationery",
-        "asphalt-kreatorz"
-      ],
-      "hexEstimated": true
+        "asphalt-kreatorz",
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y45",
       "family": "Y",
       "number": "45",
       "name": "Canaria Yellow",
-      "hex": "#FFEE58",
+      "hex": "#FCF281",
       "source": "user-csv",
       "sourceLine": 59,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFEE58).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y49",
       "family": "Y",
       "number": "49",
       "name": "Pastel Green",
-      "hex": "#C5E1A5",
+      "hex": "#F0E965",
       "source": "user-csv",
       "sourceLine": 60,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #C5E1A5).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y141",
       "family": "Y",
       "number": "141",
       "name": "Buttercup Yellow",
-      "hex": "#FFF176",
+      "hex": "#FBD49D",
       "source": "user-csv",
       "sourceLine": 61,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF176).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y164",
       "family": "Y",
       "number": "164",
       "name": "Anise",
-      "hex": "#EEFF41",
+      "hex": "#F8F38D",
       "source": "user-csv",
       "sourceLine": 62,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #EEFF41).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y169",
       "family": "Y",
       "number": "169",
       "name": "Putty",
-      "hex": "#E6EE9C",
+      "hex": "#E1D490",
       "source": "user-csv",
       "sourceLine": 63,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E6EE9C).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y221",
       "family": "Y",
       "number": "221",
       "name": "Primary Yellow",
-      "hex": "#FFEB3B",
+      "hex": "#FFEE02",
       "source": "user-csv",
       "sourceLine": 64,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFEB3B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y222",
       "family": "Y",
       "number": "222",
       "name": "Golden Yellow",
-      "hex": "#FBC02D",
+      "hex": "#FCC900",
       "source": "user-csv",
       "sourceLine": 65,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FBC02D).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y223",
       "family": "Y",
       "number": "223",
       "name": "Straw Yellow",
-      "hex": "#FFF176",
+      "hex": "#DAC99E",
       "source": "user-csv",
       "sourceLine": 66,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF176).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y224",
       "family": "Y",
       "number": "224",
       "name": "Olive Pale",
-      "hex": "#C0CA33",
+      "hex": "#BAAD2B",
       "source": "user-csv",
       "sourceLine": 67,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #C0CA33).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "Y225",
       "family": "Y",
       "number": "225",
       "name": "Olive Green Dark",
-      "hex": "#558B2F",
+      "hex": "#6E7146",
       "source": "user-csv",
       "sourceLine": 68,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #558B2F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY47",
       "family": "GY",
       "number": "47",
       "name": "Grass Green",
-      "hex": "#7CB342",
+      "hex": "#5BB531",
       "source": "user-csv",
       "sourceLine": 69,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #7CB342).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY48",
       "family": "GY",
       "number": "48",
       "name": "Yellow Green",
-      "hex": "#9CCC65",
+      "hex": "#CBDA01",
       "source": "user-csv",
       "sourceLine": 70,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #9CCC65).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY59",
       "family": "GY",
       "number": "59",
       "name": "Pale Green",
-      "hex": "#DCEDC8",
+      "hex": "#A1D195",
       "source": "user-csv",
       "sourceLine": 71,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #DCEDC8).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY163",
       "family": "GY",
       "number": "163",
       "name": "Green Bice",
-      "hex": "#AED581",
+      "hex": "#FEF471",
       "source": "user-csv",
       "sourceLine": 72,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #AED581).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY166",
       "family": "GY",
       "number": "166",
       "name": "Mignonette",
-      "hex": "#DCE775",
+      "hex": "#EDF2BC",
       "source": "user-csv",
       "sourceLine": 73,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #DCE775).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY167",
       "family": "GY",
       "number": "167",
       "name": "Pale Green Light",
-      "hex": "#F0F4C3",
+      "hex": "#D7E9C1",
       "source": "user-csv",
       "sourceLine": 74,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F0F4C3).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY172",
       "family": "GY",
       "number": "172",
       "name": "Spectrum Green",
-      "hex": "#BDDEB3",
-      "hexEstimated": true,
+      "hex": "#CEE6C4",
       "source": "verified-reference",
       "sourceLine": null,
       "verificationStatus": "cross-checked",
-      "note": "Ausente en el CSV y presente en ambas referencias. Ninguna fuente publica un HEX; se estimó a partir de la muestra de una imagen de producto (swatch-gy172).",
+      "note": "Ausente en el CSV y presente en ambas referencias y en la carta de colores. HEX de la carta de colores (sin HEX).",
       "references": [
         "city-stationery",
         "asphalt-kreatorz",
-        "swatch-gy172"
+        "shinhan-chart"
       ]
     },
     {
@@ -769,16 +1052,15 @@
       "family": "GY",
       "number": "173",
       "name": "Dim Green",
-      "hex": "#F2F6D5",
-      "hexEstimated": true,
+      "hex": "#F7F8D9",
       "source": "verified-reference",
       "sourceLine": null,
       "verificationStatus": "cross-checked",
-      "note": "Ausente en el CSV y presente en ambas referencias. Ninguna fuente publica un HEX; se estimó a partir de la muestra de una imagen de producto (swatch-gy173).",
+      "note": "Ausente en el CSV y presente en ambas referencias y en la carta de colores. HEX de la carta de colores (sin HEX).",
       "references": [
         "city-stationery",
         "asphalt-kreatorz",
-        "swatch-gy173"
+        "shinhan-chart"
       ]
     },
     {
@@ -786,14 +1068,15 @@
       "family": "GY",
       "number": "174",
       "name": "Spring Dim Green",
-      "hex": "#C0CA33",
+      "hex": "#E3EDB9",
       "source": "user-csv",
       "sourceLine": 75,
       "verificationStatus": "cross-checked",
-      "note": "El CSV dice 'Dim Lime'; ambas referencias dicen 'Spring Dim Green'.",
+      "note": "El CSV dice 'Dim Lime'; ambas referencias dicen 'Spring Dim Green'. HEX de la carta de colores (antes #C0CA33).",
       "references": [
         "city-stationery",
-        "asphalt-kreatorz"
+        "asphalt-kreatorz",
+        "shinhan-chart"
       ]
     },
     {
@@ -801,44 +1084,57 @@
       "family": "GY",
       "number": "175",
       "name": "Lime Green",
-      "hex": "#CDDC39",
+      "hex": "#C5DAA1",
       "source": "user-csv",
       "sourceLine": 76,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #CDDC39).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY231",
       "family": "GY",
       "number": "231",
       "name": "Seaweed Green",
-      "hex": "#33691E",
+      "hex": "#6D7D4E",
       "source": "user-csv",
       "sourceLine": 77,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #33691E).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY232",
       "family": "GY",
       "number": "232",
       "name": "Grayish Green Pale",
-      "hex": "#C8E6C9",
+      "hex": "#BDC1AA",
       "source": "user-csv",
       "sourceLine": 78,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #C8E6C9).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY233",
       "family": "GY",
       "number": "233",
       "name": "Grayish Olive Green",
-      "hex": "#689F38",
+      "hex": "#B0BF98",
       "source": "user-csv",
       "sourceLine": 79,
       "verificationStatus": "cross-checked",
-      "note": "El CSV dice 'Grayish Olive'; ambas referencias dicen 'Grayish Olive Green'.",
+      "note": "El CSV dice 'Grayish Olive'; ambas referencias dicen 'Grayish Olive Green'. HEX de la carta de colores (antes #689F38).",
       "references": [
         "city-stationery",
-        "asphalt-kreatorz"
+        "asphalt-kreatorz",
+        "shinhan-chart"
       ]
     },
     {
@@ -846,124 +1142,169 @@
       "family": "GY",
       "number": "234",
       "name": "Leaf Green",
-      "hex": "#8BC34A",
+      "hex": "#94C51C",
       "source": "user-csv",
       "sourceLine": 80,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #8BC34A).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY235",
       "family": "GY",
       "number": "235",
       "name": "Sap Green",
-      "hex": "#558B2F",
+      "hex": "#809952",
       "source": "user-csv",
       "sourceLine": 81,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #558B2F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY236",
       "family": "GY",
       "number": "236",
       "name": "Spring Green",
-      "hex": "#9CCC65",
+      "hex": "#AACF43",
       "source": "user-csv",
       "sourceLine": 82,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #9CCC65).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GY237",
       "family": "GY",
       "number": "237",
       "name": "Willow Green",
-      "hex": "#AED581",
+      "hex": "#B6C88C",
       "source": "user-csv",
       "sourceLine": 83,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #AED581).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G43",
       "family": "G",
       "number": "43",
       "name": "Deep Olive Green",
-      "hex": "#33691E",
+      "hex": "#6A8C5A",
       "source": "user-csv",
       "sourceLine": 86,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #33691E).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G46",
       "family": "G",
       "number": "46",
       "name": "Vivid Green",
-      "hex": "#4CAF50",
+      "hex": "#1CAD52",
       "source": "user-csv",
       "sourceLine": 87,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4CAF50).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G54",
       "family": "G",
       "number": "54",
       "name": "Viridian",
-      "hex": "#00897B",
+      "hex": "#00825C",
       "source": "user-csv",
       "sourceLine": 88,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #00897B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G55",
       "family": "G",
       "number": "55",
       "name": "Emerald Green",
-      "hex": "#2E7D32",
+      "hex": "#009D60",
       "source": "user-csv",
       "sourceLine": 89,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #2E7D32).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G56",
       "family": "G",
       "number": "56",
       "name": "Mint Green",
-      "hex": "#66BB6A",
+      "hex": "#00A86A",
       "source": "user-csv",
       "sourceLine": 90,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #66BB6A).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G58",
       "family": "G",
       "number": "58",
       "name": "Mint Green Light",
-      "hex": "#A5D6A7",
+      "hex": "#39B38E",
       "source": "user-csv",
       "sourceLine": 91,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #A5D6A7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G241",
       "family": "G",
       "number": "241",
       "name": "Grayish Green Deep",
-      "hex": "#1B5E20",
+      "hex": "#697C60",
       "source": "user-csv",
       "sourceLine": 92,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #1B5E20).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "G242",
       "family": "G",
       "number": "242",
       "name": "Cobalt Green Pale",
-      "hex": "#A5D6A7",
+      "hex": "#99C37B",
       "source": "user-csv",
       "sourceLine": 84,
       "verificationStatus": "cross-checked",
-      "note": "El CSV dice GY242; ambas referencias listan G242 Cobalt Green Pale.",
+      "note": "El CSV dice GY242; ambas referencias listan G242 Cobalt Green Pale. HEX de la carta de colores (antes #A5D6A7).",
       "references": [
         "city-stationery",
-        "asphalt-kreatorz"
+        "asphalt-kreatorz",
+        "shinhan-chart"
       ]
     },
     {
@@ -971,14 +1312,15 @@
       "family": "G",
       "number": "243",
       "name": "Green Deep",
-      "hex": "#2E7D32",
+      "hex": "#009E54",
       "source": "user-csv",
       "sourceLine": 93,
       "verificationStatus": "cross-checked",
-      "note": "Prefijo G confirmado por ambas referencias. Reemplaza al duplicado GY243 del CSV.",
+      "note": "Prefijo G confirmado por ambas referencias y por la carta de colores. Reemplaza al duplicado GY243 del CSV. HEX de la carta de colores (antes #2E7D32).",
       "references": [
         "city-stationery",
-        "asphalt-kreatorz"
+        "asphalt-kreatorz",
+        "shinhan-chart"
       ]
     },
     {
@@ -986,1090 +1328,1526 @@
       "family": "BG",
       "number": "1",
       "name": "Blue Gray 1",
-      "hex": "#ECEFF1",
+      "hex": "#E4E9ED",
       "source": "user-csv",
       "sourceLine": 94,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #ECEFF1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG3",
       "family": "BG",
       "number": "3",
       "name": "Blue Gray 3",
-      "hex": "#CFD8DC",
+      "hex": "#CAD1D9",
       "source": "user-csv",
       "sourceLine": 95,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #CFD8DC).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG5",
       "family": "BG",
       "number": "5",
       "name": "Blue Gray 5",
-      "hex": "#90A4AE",
+      "hex": "#96A3AC",
       "source": "user-csv",
       "sourceLine": 96,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #90A4AE).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG7",
       "family": "BG",
       "number": "7",
       "name": "Blue Gray 7",
-      "hex": "#607D8B",
+      "hex": "#6B757E",
       "source": "user-csv",
       "sourceLine": 97,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #607D8B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG9",
       "family": "BG",
       "number": "9",
       "name": "Blue Gray 9",
-      "hex": "#37474F",
+      "hex": "#40464E",
       "source": "user-csv",
       "sourceLine": 98,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #37474F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG50",
       "family": "BG",
       "number": "50",
       "name": "Forest Green",
-      "hex": "#1B5E20",
+      "hex": "#016364",
       "source": "user-csv",
       "sourceLine": 99,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #1B5E20).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG51",
       "family": "BG",
       "number": "51",
       "name": "Dark Green",
-      "hex": "#004D40",
+      "hex": "#005D4B",
       "source": "user-csv",
       "sourceLine": 100,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #004D40).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG52",
       "family": "BG",
       "number": "52",
       "name": "Deep Green",
-      "hex": "#00695C",
+      "hex": "#00664E",
       "source": "user-csv",
       "sourceLine": 101,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #00695C).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG53",
       "family": "BG",
       "number": "53",
       "name": "Turquoise Green",
-      "hex": "#00897B",
+      "hex": "#007C6E",
       "source": "user-csv",
       "sourceLine": 102,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #00897B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG57",
       "family": "BG",
       "number": "57",
       "name": "Turquoise Green Light",
-      "hex": "#4DB6AC",
+      "hex": "#28AA92",
       "source": "user-csv",
       "sourceLine": 103,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4DB6AC).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG61",
       "family": "BG",
       "number": "61",
       "name": "Peacock Green",
-      "hex": "#00796B",
+      "hex": "#007F82",
       "source": "user-csv",
       "sourceLine": 104,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #00796B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG178",
       "family": "BG",
       "number": "178",
       "name": "Cool Shadow",
-      "hex": "#E0F2F1",
+      "hex": "#D5EBE8",
       "source": "user-csv",
       "sourceLine": 105,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E0F2F1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG179",
       "family": "BG",
       "number": "179",
       "name": "Aqua Mint",
-      "hex": "#B2DFDB",
+      "hex": "#BDE1D7",
       "source": "user-csv",
       "sourceLine": 106,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #B2DFDB).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BG251",
       "family": "BG",
       "number": "251",
       "name": "Verona Blue",
-      "hex": "#009688",
+      "hex": "#6FAEA6",
       "source": "user-csv",
       "sourceLine": 107,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #009688).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B62",
       "family": "B",
       "number": "62",
       "name": "Marine Blue",
-      "hex": "#0277BD",
+      "hex": "#26688B",
       "source": "user-csv",
       "sourceLine": 108,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #0277BD).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B63",
       "family": "B",
       "number": "63",
       "name": "Cerulean Blue",
-      "hex": "#0288D1",
+      "hex": "#0194C8",
       "source": "user-csv",
       "sourceLine": 109,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #0288D1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B64",
       "family": "B",
       "number": "64",
       "name": "Indian Blue",
-      "hex": "#01579B",
+      "hex": "#016E97",
       "source": "user-csv",
       "sourceLine": 110,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #01579B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B65",
       "family": "B",
       "number": "65",
       "name": "Ice Blue",
-      "hex": "#E0F7FA",
+      "hex": "#009CA8",
       "source": "user-csv",
       "sourceLine": 111,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E0F7FA).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B66",
       "family": "B",
       "number": "66",
       "name": "Baby Blue",
-      "hex": "#80D8FF",
+      "hex": "#0FB7DE",
       "source": "user-csv",
       "sourceLine": 112,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #80D8FF).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B67",
       "family": "B",
       "number": "67",
       "name": "Pastel Blue",
-      "hex": "#80DEEA",
+      "hex": "#82CEDE",
       "source": "user-csv",
       "sourceLine": 113,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #80DEEA).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B68",
       "family": "B",
       "number": "68",
       "name": "Turquoise Blue",
-      "hex": "#00ACC1",
+      "hex": "#85CBC0",
       "source": "user-csv",
       "sourceLine": 114,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #00ACC1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B143",
       "family": "B",
       "number": "143",
       "name": "Mint Blue",
-      "hex": "#E0F7FA",
+      "hex": "#CBE6E1",
       "source": "user-csv",
       "sourceLine": 115,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E0F7FA).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B171",
       "family": "B",
       "number": "171",
       "name": "Jade Green",
-      "hex": "#26A69A",
+      "hex": "#D1E9D9",
       "source": "user-csv",
       "sourceLine": 116,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #26A69A).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B182",
       "family": "B",
       "number": "182",
       "name": "Frost Blue",
-      "hex": "#B2EBF2",
+      "hex": "#D0E9ED",
       "source": "user-csv",
       "sourceLine": 117,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #B2EBF2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B261",
       "family": "B",
       "number": "261",
       "name": "Primary Cyan",
-      "hex": "#00ADEF",
+      "hex": "#0280B1",
       "source": "user-csv",
       "sourceLine": 118,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #00ADEF).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B262",
       "family": "B",
       "number": "262",
       "name": "Cerulean Blue Light",
-      "hex": "#4FC3F7",
+      "hex": "#00A9E2",
       "source": "user-csv",
       "sourceLine": 119,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4FC3F7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "B263",
       "family": "B",
       "number": "263",
       "name": "Peacock Blue",
-      "hex": "#0097A7",
+      "hex": "#0081CC",
       "source": "user-csv",
       "sourceLine": 120,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #0097A7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB69",
       "family": "PB",
       "number": "69",
       "name": "Prussian Blue",
-      "hex": "#0D47A1",
+      "hex": "#003871",
       "source": "user-csv",
       "sourceLine": 121,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #0D47A1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB70",
       "family": "PB",
       "number": "70",
       "name": "Royal Blue",
-      "hex": "#1565C0",
+      "hex": "#0156A9",
       "source": "user-csv",
       "sourceLine": 122,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #1565C0).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB71",
       "family": "PB",
       "number": "71",
       "name": "Cobalt Blue",
-      "hex": "#1976D2",
+      "hex": "#00489D",
       "source": "user-csv",
       "sourceLine": 123,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #1976D2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB72",
       "family": "PB",
       "number": "72",
       "name": "Napoleon Blue",
-      "hex": "#1E88E5",
+      "hex": "#124098",
       "source": "user-csv",
       "sourceLine": 124,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #1E88E5).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB73",
       "family": "PB",
       "number": "73",
       "name": "Ultramarine Blue",
-      "hex": "#2196F3",
+      "hex": "#312D8E",
       "source": "user-csv",
       "sourceLine": 125,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #2196F3).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB74",
       "family": "PB",
       "number": "74",
       "name": "Brilliant Blue",
-      "hex": "#42A5F5",
+      "hex": "#2C5DAC",
       "source": "user-csv",
       "sourceLine": 126,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #42A5F5).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB75",
       "family": "PB",
       "number": "75",
       "name": "Dark Blue Light",
-      "hex": "#64B5F6",
+      "hex": "#AFA7D0",
       "source": "user-csv",
       "sourceLine": 127,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #64B5F6).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB76",
       "family": "PB",
       "number": "76",
       "name": "Sky Blue",
-      "hex": "#90CAF9",
+      "hex": "#8EB0DD",
       "source": "user-csv",
       "sourceLine": 128,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #90CAF9).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB77",
       "family": "PB",
       "number": "77",
       "name": "Pale Blue",
-      "hex": "#BBDEFB",
+      "hex": "#D5C5E0",
       "source": "user-csv",
       "sourceLine": 129,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #BBDEFB).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB144",
       "family": "PB",
       "number": "144",
       "name": "Pale Baby Blue",
-      "hex": "#E3F2FD",
+      "hex": "#E0EAF6",
       "source": "user-csv",
       "sourceLine": 130,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E3F2FD).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB183",
       "family": "PB",
       "number": "183",
       "name": "Phthalo Blue",
-      "hex": "#0D47A1",
+      "hex": "#A2C2E8",
       "source": "user-csv",
       "sourceLine": 131,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #0D47A1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB185",
       "family": "PB",
       "number": "185",
       "name": "Pale Blue Light",
-      "hex": "#90CAF9",
+      "hex": "#BBE1F8",
       "source": "user-csv",
       "sourceLine": 132,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #90CAF9).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB271",
       "family": "PB",
       "number": "271",
       "name": "Light Blue",
-      "hex": "#64B5F6",
+      "hex": "#78C1EC",
       "source": "user-csv",
       "sourceLine": 133,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #64B5F6).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB272",
       "family": "PB",
       "number": "272",
       "name": "Grayish Blue Pale",
-      "hex": "#C5CAE9",
+      "hex": "#C0D4EC",
       "source": "user-csv",
       "sourceLine": 134,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #C5CAE9).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB273",
       "family": "PB",
       "number": "273",
       "name": "Blue Berry",
-      "hex": "#283593",
+      "hex": "#98A4CE",
       "source": "user-csv",
       "sourceLine": 135,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #283593).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "PB274",
       "family": "PB",
       "number": "274",
       "name": "Violet Dark",
-      "hex": "#1A237E",
+      "hex": "#635588",
       "source": "user-csv",
       "sourceLine": 136,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #1A237E).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P81",
       "family": "P",
       "number": "81",
       "name": "Deep Violet",
-      "hex": "#4A148C",
+      "hex": "#681F8A",
       "source": "user-csv",
       "sourceLine": 137,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4A148C).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P82",
       "family": "P",
       "number": "82",
       "name": "Light Violet",
-      "hex": "#7B1FA2",
+      "hex": "#85308D",
       "source": "user-csv",
       "sourceLine": 138,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #7B1FA2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P83",
       "family": "P",
       "number": "83",
       "name": "Lavender",
-      "hex": "#9C27B0",
+      "hex": "#9D6FA0",
       "source": "user-csv",
       "sourceLine": 139,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #9C27B0).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P84",
       "family": "P",
       "number": "84",
       "name": "Pastel Violet",
-      "hex": "#CE93D8",
+      "hex": "#DE9CC2",
       "source": "user-csv",
       "sourceLine": 140,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #CE93D8).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P85",
       "family": "P",
       "number": "85",
       "name": "Vivid Purple",
-      "hex": "#AA00FF",
+      "hex": "#920784",
       "source": "user-csv",
       "sourceLine": 141,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #AA00FF).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P88",
       "family": "P",
       "number": "88",
       "name": "Purple Gray",
-      "hex": "#7E57C2",
+      "hex": "#ED9DC2",
       "source": "user-csv",
       "sourceLine": 142,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #7E57C2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P145",
       "family": "P",
       "number": "145",
       "name": "Pale Lavender",
-      "hex": "#E1BEE7",
+      "hex": "#E9E7F4",
       "source": "user-csv",
       "sourceLine": 143,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E1BEE7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P146",
       "family": "P",
       "number": "146",
       "name": "Mauve Shadow",
-      "hex": "#D1C4E9",
+      "hex": "#E7CBE3",
       "source": "user-csv",
       "sourceLine": 144,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D1C4E9).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P147",
       "family": "P",
       "number": "147",
       "name": "Pale Lilac",
-      "hex": "#F3E5F5",
+      "hex": "#EDBBD6",
       "source": "user-csv",
       "sourceLine": 145,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F3E5F5).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P281",
       "family": "P",
       "number": "281",
       "name": "Violet",
-      "hex": "#673AB7",
+      "hex": "#7B4287",
       "source": "user-csv",
       "sourceLine": 146,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #673AB7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P282",
       "family": "P",
       "number": "282",
       "name": "Peony Purple",
-      "hex": "#8E24AA",
+      "hex": "#C970A0",
       "source": "user-csv",
       "sourceLine": 147,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #8E24AA).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "P283",
       "family": "P",
       "number": "283",
       "name": "Purple Deep",
-      "hex": "#4A148C",
+      "hex": "#622858",
       "source": "user-csv",
       "sourceLine": 148,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4A148C).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR91",
       "family": "BR",
       "number": "91",
       "name": "Natural Oak",
-      "hex": "#795548",
+      "hex": "#743428",
       "source": "user-csv",
       "sourceLine": 149,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #795548).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR92",
       "family": "BR",
       "number": "92",
       "name": "Chocolate",
-      "hex": "#4E342E",
+      "hex": "#61392D",
       "source": "user-csv",
       "sourceLine": 150,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4E342E).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR93",
       "family": "BR",
       "number": "93",
       "name": "Burnt Orange",
-      "hex": "#D84315",
+      "hex": "#954B30",
       "source": "user-csv",
       "sourceLine": 151,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D84315).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR94",
       "family": "BR",
       "number": "94",
       "name": "Brick Brown",
-      "hex": "#5D4037",
+      "hex": "#8F331E",
       "source": "user-csv",
       "sourceLine": 152,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #5D4037).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR95",
       "family": "BR",
       "number": "95",
       "name": "Burnt Sienna",
-      "hex": "#8D6E63",
+      "hex": "#7F4F35",
       "source": "user-csv",
       "sourceLine": 153,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #8D6E63).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR96",
       "family": "BR",
       "number": "96",
       "name": "Mahogany",
-      "hex": "#3E2723",
+      "hex": "#8E5331",
       "source": "user-csv",
       "sourceLine": 154,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #3E2723).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR97",
       "family": "BR",
       "number": "97",
       "name": "Rose Beige",
-      "hex": "#D7CCC8",
+      "hex": "#CA854E",
       "source": "user-csv",
       "sourceLine": 155,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D7CCC8).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR98",
       "family": "BR",
       "number": "98",
       "name": "Chestnut Brown",
-      "hex": "#4E342E",
+      "hex": "#402420",
       "source": "user-csv",
       "sourceLine": 156,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4E342E).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR99",
       "family": "BR",
       "number": "99",
       "name": "Bronze",
-      "hex": "#6D4C41",
+      "hex": "#55432F",
       "source": "user-csv",
       "sourceLine": 157,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #6D4C41).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR100",
       "family": "BR",
       "number": "100",
       "name": "Walnut",
-      "hex": "#3E2723",
+      "hex": "#98772A",
       "source": "user-csv",
       "sourceLine": 158,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #3E2723).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR101",
       "family": "BR",
       "number": "101",
       "name": "Yellow Ochre",
-      "hex": "#F57F17",
+      "hex": "#C98A07",
       "source": "user-csv",
       "sourceLine": 159,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F57F17).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR102",
       "family": "BR",
       "number": "102",
       "name": "Raw Umber",
-      "hex": "#4E342E",
+      "hex": "#744B2D",
       "source": "user-csv",
       "sourceLine": 160,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4E342E).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR103",
       "family": "BR",
       "number": "103",
       "name": "Potato Brown",
-      "hex": "#8D6E63",
+      "hex": "#CC7F25",
       "source": "user-csv",
       "sourceLine": 161,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #8D6E63).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR104",
       "family": "BR",
       "number": "104",
       "name": "Brown Gray",
-      "hex": "#A1887F",
+      "hex": "#D2B16A",
       "source": "user-csv",
       "sourceLine": 162,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #A1887F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR107",
       "family": "BR",
       "number": "107",
       "name": "Sand",
-      "hex": "#FFE0B2",
+      "hex": "#F7CEA1",
       "source": "user-csv",
       "sourceLine": 163,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFE0B2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR109",
       "family": "BR",
       "number": "109",
       "name": "Pearl White",
-      "hex": "#FAFAFA",
+      "hex": "#FFF9E0",
       "source": "user-csv",
       "sourceLine": 164,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FAFAFA).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR111",
       "family": "BR",
       "number": "111",
       "name": "Brown",
-      "hex": "#6D4C41",
+      "hex": "#E67E5B",
       "source": "user-csv",
       "sourceLine": 165,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #6D4C41).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR112",
       "family": "BR",
       "number": "112",
       "name": "Leather Brown",
-      "hex": "#8D6E63",
+      "hex": "#E3A47B",
       "source": "user-csv",
       "sourceLine": 166,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #8D6E63).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR113",
       "family": "BR",
       "number": "113",
       "name": "Peanut",
-      "hex": "#FFE0B2",
+      "hex": "#F7E8C1",
       "source": "user-csv",
       "sourceLine": 167,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFE0B2).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR114",
       "family": "BR",
       "number": "114",
       "name": "Pale Camel",
-      "hex": "#FFCCBC",
+      "hex": "#EDCD9C",
       "source": "user-csv",
       "sourceLine": 168,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFCCBC).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR115",
       "family": "BR",
       "number": "115",
       "name": "Flax",
-      "hex": "#FFF8E1",
+      "hex": "#DECCA8",
       "source": "user-csv",
       "sourceLine": 169,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFF8E1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR116",
       "family": "BR",
       "number": "116",
       "name": "Clay",
-      "hex": "#D7CCC8",
+      "hex": "#C1AC81",
       "source": "user-csv",
       "sourceLine": 170,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #D7CCC8).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "BR134",
       "family": "BR",
       "number": "134",
       "name": "Raw Silk",
-      "hex": "#FFFDE7",
+      "hex": "#FFF1D2",
       "source": "user-csv",
       "sourceLine": 171,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FFFDE7).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG0.5",
       "family": "CG",
       "number": "0.5",
       "name": "Cool Gray 0.5",
-      "hex": "#F5F7FA",
+      "hex": "#F4F4F6",
       "source": "user-csv",
       "sourceLine": 172,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F5F7FA).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG1",
       "family": "CG",
       "number": "1",
       "name": "Cool Gray 1",
-      "hex": "#E4E7EB",
+      "hex": "#E6E7EB",
       "source": "user-csv",
       "sourceLine": 173,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E4E7EB).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG2",
       "family": "CG",
       "number": "2",
       "name": "Cool Gray 2",
-      "hex": "#CBD2D9",
+      "hex": "#D8D9DE",
       "source": "user-csv",
       "sourceLine": 174,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #CBD2D9).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG3",
       "family": "CG",
       "number": "3",
       "name": "Cool Gray 3",
-      "hex": "#9AA5B1",
+      "hex": "#C6C9D2",
       "source": "user-csv",
       "sourceLine": 175,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #9AA5B1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG4",
       "family": "CG",
       "number": "4",
       "name": "Cool Gray 4",
-      "hex": "#7B8794",
+      "hex": "#B5B8C1",
       "source": "user-csv",
       "sourceLine": 176,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #7B8794).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG5",
       "family": "CG",
       "number": "5",
       "name": "Cool Gray 5",
-      "hex": "#616E7C",
+      "hex": "#A2A6AF",
       "source": "user-csv",
       "sourceLine": 177,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #616E7C).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG6",
       "family": "CG",
       "number": "6",
       "name": "Cool Gray 6",
-      "hex": "#525F7F",
+      "hex": "#8C8F98",
       "source": "user-csv",
       "sourceLine": 178,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #525F7F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG7",
       "family": "CG",
       "number": "7",
       "name": "Cool Gray 7",
-      "hex": "#323F4B",
+      "hex": "#76797E",
       "source": "user-csv",
       "sourceLine": 179,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #323F4B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG8",
       "family": "CG",
       "number": "8",
       "name": "Cool Gray 8",
-      "hex": "#1F2933",
+      "hex": "#5E6265",
       "source": "user-csv",
       "sourceLine": 180,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #1F2933).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "CG9",
       "family": "CG",
       "number": "9",
       "name": "Cool Gray 9",
-      "hex": "#121820",
+      "hex": "#494A4E",
       "source": "user-csv",
       "sourceLine": 181,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #121820).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG0.5",
       "family": "WG",
       "number": "0.5",
       "name": "Warm Gray 0.5",
-      "hex": "#FAF8F5",
+      "hex": "#F6F5F3",
       "source": "user-csv",
       "sourceLine": 182,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FAF8F5).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG1",
       "family": "WG",
       "number": "1",
       "name": "Warm Gray 1",
-      "hex": "#F0ECE1",
+      "hex": "#ECE9E4",
       "source": "user-csv",
       "sourceLine": 183,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #F0ECE1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG2",
       "family": "WG",
       "number": "2",
       "name": "Warm Gray 2",
-      "hex": "#E0DACE",
+      "hex": "#E3DAD5",
       "source": "user-csv",
       "sourceLine": 184,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #E0DACE).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG3",
       "family": "WG",
       "number": "3",
       "name": "Warm Gray 3",
-      "hex": "#C7BFA6",
+      "hex": "#D1C8C3",
       "source": "user-csv",
       "sourceLine": 185,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #C7BFA6).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG4",
       "family": "WG",
       "number": "4",
       "name": "Warm Gray 4",
-      "hex": "#A39B8B",
+      "hex": "#BFB6B1",
       "source": "user-csv",
       "sourceLine": 186,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #A39B8B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG5",
       "family": "WG",
       "number": "5",
       "name": "Warm Gray 5",
-      "hex": "#7D7263",
+      "hex": "#ACA39E",
       "source": "user-csv",
       "sourceLine": 187,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #7D7263).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG6",
       "family": "WG",
       "number": "6",
       "name": "Warm Gray 6",
-      "hex": "#63594C",
+      "hex": "#948A88",
       "source": "user-csv",
       "sourceLine": 188,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #63594C).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG7",
       "family": "WG",
       "number": "7",
       "name": "Warm Gray 7",
-      "hex": "#4D4337",
+      "hex": "#7D7371",
       "source": "user-csv",
       "sourceLine": 189,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #4D4337).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG8",
       "family": "WG",
       "number": "8",
       "name": "Warm Gray 8",
-      "hex": "#383027",
+      "hex": "#665C5A",
       "source": "user-csv",
       "sourceLine": 190,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #383027).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "WG9",
       "family": "WG",
       "number": "9",
       "name": "Warm Gray 9",
-      "hex": "#241F1A",
+      "hex": "#4E4442",
       "source": "user-csv",
       "sourceLine": 191,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #241F1A).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GG1",
       "family": "GG",
       "number": "1",
       "name": "Green Gray 1",
-      "hex": "#ECEFF1",
+      "hex": "#E9EAEC",
       "source": "user-csv",
       "sourceLine": 192,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #ECEFF1).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GG3",
       "family": "GG",
       "number": "3",
       "name": "Green Gray 3",
-      "hex": "#CFD8DC",
+      "hex": "#CDD2CE",
       "source": "user-csv",
       "sourceLine": 193,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #CFD8DC).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GG5",
       "family": "GG",
       "number": "5",
       "name": "Green Gray 5",
-      "hex": "#90A4AE",
+      "hex": "#9EA4A0",
       "source": "user-csv",
       "sourceLine": 194,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #90A4AE).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GG7",
       "family": "GG",
       "number": "7",
       "name": "Green Gray 7",
-      "hex": "#607D8B",
+      "hex": "#70756F",
       "source": "user-csv",
       "sourceLine": 195,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #607D8B).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "GG9",
       "family": "GG",
       "number": "9",
       "name": "Green Gray 9",
-      "hex": "#37474F",
+      "hex": "#424741",
       "source": "user-csv",
       "sourceLine": 196,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #37474F).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "F121",
       "family": "F",
       "number": "121",
       "name": "Fluorescent Coral Red",
-      "hex": "#FF3D00",
+      "hex": "#E83751",
       "source": "user-csv",
       "sourceLine": 197,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF3D00).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "F122",
       "family": "F",
       "number": "122",
       "name": "Fluorescent Orange",
-      "hex": "#FF6D00",
+      "hex": "#EE6401",
       "source": "user-csv",
       "sourceLine": 198,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF6D00).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "F123",
       "family": "F",
       "number": "123",
       "name": "Fluorescent Yellow",
-      "hex": "#EEFF41",
+      "hex": "#F8EC00",
       "source": "user-csv",
       "sourceLine": 199,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #EEFF41).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "F124",
       "family": "F",
       "number": "124",
       "name": "Fluorescent Green",
-      "hex": "#76FF03",
+      "hex": "#C2D845",
       "source": "user-csv",
       "sourceLine": 200,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #76FF03).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "F125",
       "family": "F",
       "number": "125",
       "name": "Fluorescent Rose",
-      "hex": "#FF4081",
+      "hex": "#E20685",
       "source": "user-csv",
       "sourceLine": 201,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF4081).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "F126",
       "family": "F",
       "number": "126",
       "name": "Fluorescent Pink",
-      "hex": "#FF80AB",
+      "hex": "#E74090",
       "source": "user-csv",
       "sourceLine": 202,
-      "verificationStatus": "provided"
+      "verificationStatus": "cross-checked",
+      "note": "HEX de la carta de colores (antes #FF80AB).",
+      "references": [
+        "shinhan-chart"
+      ]
     },
     {
       "id": "120",

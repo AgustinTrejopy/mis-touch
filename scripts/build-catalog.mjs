@@ -12,6 +12,7 @@ const unknownRefs = [
   ...(corrections.changes ?? []),
   ...(corrections.additions ?? []),
   ...(corrections.annotations ?? []),
+  ...(corrections.chartHex ? [corrections.chartHex] : []),
 ].flatMap((c) => c.references ?? []).filter((ref) => !corrections.references[ref]);
 if (unknownRefs.length > 0) {
   console.error(`Referencias no definidas: ${[...new Set(unknownRefs)].join(', ')}`);

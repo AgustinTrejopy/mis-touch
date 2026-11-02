@@ -11,7 +11,7 @@ data/catalog-corrections.json            ──┘
 ```
 
 1. **Lista de origen** (`data/source/touch-colors-original.csv`): 203 registros con nombre, familia, número y HEX. **Es inmutable**: nunca se edita, aunque tenga errores. Su SHA-256 es `8775aa57b9d98ac94b325aaedc07755646d545d80c42dcc0d363858028e2566f`.
-2. **Correcciones** (`data/catalog-corrections.json`): exclusiones, cambios, agregados y anotaciones. Cada entrada cita una o más fuentes.
+2. **Correcciones** (`data/catalog-corrections.json`): exclusiones, cambios, agregados, anotaciones y los HEX de la carta de colores (`chartHex`). Cada entrada cita una o más fuentes.
 3. **Catálogo generado** (`src/data/touch-colors.json`): lo produce `npm run catalog` y es lo que usa la app. No se edita a mano; un test falla si no coincide con lo que generaría el script.
 
 ### Formato de la lista de origen
@@ -27,7 +27,7 @@ Black,,120,#000000
 | `nombre` | Nombre del color en inglés, como en el producto. |
 | `letra` | Familia (`R`, `GY`, `CG`…). Puede estar vacía: `120 Black` y `0 Colorless Blender`. |
 | `numero` | Número como texto. Puede tener decimales (`0.5`) y se conserva siempre como string. |
-| `hex` | Color aproximado para pantalla, en formato `#RRGGBB`. |
+| `hex` | Color en formato `#RRGGBB`. La mayoría de estos valores eran incorrectos y se reemplazan por los de la carta de colores (ver abajo). |
 
 El código de cada marcador es `letra + numero` (`R1`, `CG0.5`, `120`) y es su identificador único. **Dos códigos pueden compartir el mismo HEX** sin ser el mismo marcador.
 
@@ -66,32 +66,30 @@ La lista de origen tenía 203 registros. Se contrastó con dos listas comerciale
 | `GY242` | Familia `GY` → `G` (`G242`); alias | Ambas fuentes: `G242 Cobalt Green Pale`. |
 | `GY174` | Nombre `Dim Lime` → `Spring Dim Green` | Ambas fuentes coinciden. |
 | `GY233` | Nombre `Grayish Olive` → `Grayish Olive Green` | Ambas fuentes coinciden. |
-| — | Se agrega `GY172 Spectrum Green` (`#BDDEB3`, estimado) | Ausente en el origen, presente en ambas fuentes. |
-| — | Se agrega `GY173 Dim Green` (`#F2F6D5`, estimado) | Ausente en el origen, presente en ambas fuentes. |
-| `Y44` | Nombre `Fresh Green` → `Fresh Yellow`; HEX `#D4E157` → `#E0BF00` (estimado); estado `provided` | El nombre lo dice el marcador físico de la persona usuaria (`physical-marker-y44`) y **contradice a ambas fuentes**, que listan `Fresh Green`; se aplica por decisión del mantenedor (D-018). El HEX de origen era un verde lima; la muestra de la imagen de producto (`swatch-y44`) es amarillo mostaza. |
-| `G243`, `YR133` | Sin cambios; `cross-checked` | Ambas fuentes confirman el dato de origen. |
+| — | Se agrega `GY172 Spectrum Green` | Ausente en el origen, presente en ambas fuentes y en la carta. |
+| — | Se agrega `GY173 Dim Green` | Ausente en el origen, presente en ambas fuentes y en la carta. |
+| `Y44` | Nombre `Fresh Green` → `Fresh Yellow`; estado `provided` | El nombre lo dice el marcador físico de la persona usuaria (`physical-marker-y44`) y **contradice a ambas fuentes y a la carta**, que dicen `Fresh Green`; se aplica por decisión del mantenedor (D-018). |
+| `G243`, `YR133` | Nombre sin cambios; `cross-checked` | Ambas fuentes y la carta confirman el dato de origen. |
 
 Cuenta: 203 − 1 + 2 = **204**.
 
 **Diferencias detectadas que no se aplicaron**, porque las fuentes no coinciden entre sí o es solo ortografía: `PB145` frente a `P145`, `Forest Blue` frente a `B182 Frost Blue`, `Vermillion`, `Terracotta`, `Ultra Marine`, `Oliva Green`, `Blue Grey`. Se mantiene la lista de origen.
 
-### HEX estimados
+### Colores: carta de colores (`chartHex`)
 
-Ninguna fuente publica un HEX para `GY172` y `GY173`. Sus colores se estimaron promediando tres zonas sin texto de la muestra de color en imágenes de producto de tiendas:
+Los HEX de la lista de origen resultaron ser, en su mayoría, colores de la paleta Material Design de Google asignados a ojo, no los colores TOUCH. Por eso **todos los HEX salen de la carta de colores** "TOUCH TWIN MARKER / BRUSH MARKER — COLOR CHART 204 colors" (`shinhan-chart`), que lista los 204 códigos con su muestra (D-019).
 
-| Código | Lecturas | HEX usado |
-|---|---|---|
-| GY172 Spectrum Green | `#BDDEB3`, `#BEDDB3`, `#BCDFB3` | `#BDDEB3` |
-| GY173 Dim Green | `#F2F6D5` (×3) | `#F2F6D5` |
-| Y44 Fresh Yellow | `#E0BF00` (×4) | `#E0BF00` (reemplaza el `#D4E157` de origen) |
-
-Quedan marcados con `hexEstimated: true`, y la app lo aclara en la sección "Sobre el catálogo". Las imágenes no se incluyen en el repositorio porque pertenecen a terceros.
+- Cada HEX es el promedio de una zona central de 51×25 px de la muestra, en una imagen de 1192×3120 px. La variación dentro de cada zona es mínima (máximo 11 sobre 765 en la suma RGB).
+- La carta tiene exactamente los mismos 204 códigos que el catálogo: no hay faltantes ni sobrantes. Un test verifica que cada código tenga su HEX de la carta.
+- Comparados con la lista de origen (ΔE2000): 20 colores eran iguales a simple vista (ΔE < 3), 39 parecidos (3–6), 58 distintos (6–12) y 87 muy distintos (≥ 12). Los casos más graves: `PB183`, `RP293`, `PB273`, `PB73`, `BR100`, `P88`, `BR111` y `B65`. Los grises `CG`, `WG` y `GG` eran demasiado oscuros.
+- Cada registro cambiado conserva el HEX de origen en su `note` ("antes #…").
+- Antes de la carta, `GY172`, `GY173` y `Y44` tenían HEX estimados desde imágenes de producto (D-015). La carta los reemplaza y ya no queda ningún color con `hexEstimated`.
+- La imagen de la carta no se incluye en el repositorio porque es material de terceros.
 
 ## Limitaciones conocidas
 
-- **Los HEX son aproximaciones digitales**, no mediciones del fabricante. No reproducen exactamente la tinta, la tapa física ni la calibración de cada pantalla.
-- **Las fuentes son minoristas**, no una carta oficial de ShinHan Art con fecha de edición. Si conseguís una carta oficial, es la mejor contribución posible.
-- **Blue Gray (BG1–BG9) y Green Gray (GG1–GG9)** comparten exactamente los mismos HEX en la lista de origen. Probablemente sean poco precisos; se aceptan correcciones con fuente.
+- **Los HEX son la versión digital de la carta**, no mediciones de la tinta. No reproducen exactamente la tinta, la tapa física ni la calibración de cada pantalla.
+- **La carta no tiene fecha de edición ni URL citable.** Si conseguís el PDF oficial de ShinHan Art, sirve para confirmar o refinar los valores.
 - **Existen marcadores de otras marcas** que también se venden como "Touch", con otra numeración y otros colores (por ejemplo, tapas que muestran solo el número, sin la letra de familia). Este catálogo corresponde a **ShinHan TOUCH Twin**.
 
 ## Cómo proponer una corrección
@@ -111,6 +109,7 @@ Abrí un issue con la plantilla **Corrección del catálogo**, o mandá un pull 
    | `changes` | Cambiar `family`, `name` o `hex` de un registro | `id`, `field`, `value`, `note`, `references` (y `hexEstimated: true` si el HEX sale de una imagen) |
    | `additions` | Agregar un color que falta | `family`, `number`, `name`, `hex`, `hexEstimated?`, `note`, `references` |
    | `annotations` | Marcar un registro como verificado o dudoso, sin cambiar valores | `id`, `verificationStatus`, `note`, `references?` |
+   | `chartHex` | HEX de la carta de colores para cada código (se aplica después de las otras secciones) | `references`, `colors` (código → HEX) |
 
 4. **Regenerá y probá:**
    ```bash

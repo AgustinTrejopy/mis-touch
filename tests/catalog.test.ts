@@ -72,30 +72,42 @@ describe('catálogo derivado', () => {
     }
   });
 
-  it('243: queda G243 con su HEX original y GY243 se migra a G243', () => {
-    expect(byId('G243')).toMatchObject({ name: 'Green Deep', hex: '#2E7D32', source: 'user-csv' });
+  it('243: queda G243 y GY243 se migra a G243', () => {
+    expect(byId('G243')).toMatchObject({ name: 'Green Deep', source: 'user-csv' });
     expect(aliases.GY243).toBe('G243');
   });
 
-  it('242: GY242 pasa a G242 sin cambiar nombre ni HEX', () => {
+  it('242: GY242 pasa a G242 sin cambiar el nombre', () => {
     expect(byId('GY242')).toBeUndefined();
-    expect(byId('G242')).toMatchObject({ family: 'G', number: '242', name: 'Cobalt Green Pale', hex: '#A5D6A7' });
+    expect(byId('G242')).toMatchObject({ family: 'G', number: '242', name: 'Cobalt Green Pale' });
     expect(aliases.GY242).toBe('G242');
   });
 
-  it('GY172 y GY173 se agregan con HEX estimado desde imágenes guardadas en el repo', () => {
-    expect(byId('GY172')).toMatchObject({ hex: '#BDDEB3', hexEstimated: true, source: 'verified-reference', sourceLine: null });
-    expect(byId('GY173')).toMatchObject({ hex: '#F2F6D5', hexEstimated: true, source: 'verified-reference', sourceLine: null });
-    expect(byId('GY172')!.references).toContain('swatch-gy172');
-    expect(byId('GY173')!.references).toContain('swatch-gy173');
-    expect(catalog.filter((c) => c.hexEstimated).map((c) => c.id)).toEqual(['Y44', 'GY172', 'GY173']);
-    expect(catalog.filter((c) => c.hex === null)).toEqual([]);
+  it('la carta de colores cubre exactamente los códigos del catálogo y define cada HEX', () => {
+    const chart = corrections.chartHex!.colors;
+    expect(Object.keys(chart).sort()).toEqual(catalog.map((c) => c.id).sort());
+    for (const color of catalog) expect(color.hex, color.id).toBe(chart[color.id]);
+    expect(catalog.filter((c) => c.hexEstimated)).toEqual([]);
   });
 
-  it('Y44: nombre del marcador físico y HEX estimado desde imagen, sin cambiar el código', () => {
-    expect(byId('Y44')).toMatchObject({ name: 'Fresh Yellow', hex: '#E0BF00', hexEstimated: true, source: 'user-csv', verificationStatus: 'provided' });
-    expect(byId('Y44')!.references).toEqual(expect.arrayContaining(['physical-marker-y44', 'swatch-y44']));
+  it('GY172 y GY173 se agregan con el HEX de la carta', () => {
+    expect(byId('GY172')).toMatchObject({ hex: '#CEE6C4', source: 'verified-reference', sourceLine: null });
+    expect(byId('GY173')).toMatchObject({ hex: '#F7F8D9', source: 'verified-reference', sourceLine: null });
+    expect(byId('GY172')!.references).toContain('shinhan-chart');
+  });
+
+  it('los nombres corregidos se mantienen con el HEX de la carta', () => {
+    expect(byId('Y44')).toMatchObject({ name: 'Fresh Yellow', hex: '#E8CD00', source: 'user-csv', verificationStatus: 'provided' });
+    expect(byId('Y44')!.references).toEqual(expect.arrayContaining(['physical-marker-y44', 'shinhan-chart']));
     expect(aliases.Y44).toBeUndefined();
+    expect(byId('GY174')).toMatchObject({ name: 'Spring Dim Green', hex: '#E3EDB9' });
+    expect(byId('GY233')).toMatchObject({ name: 'Grayish Olive Green', hex: '#B0BF98' });
+  });
+
+  it('la escala de grises cálidos va de claro a oscuro', () => {
+    const lightness = (hex: string) => [1, 3, 5].reduce((sum, i) => sum + Number.parseInt(hex.slice(i, i + 2), 16), 0);
+    const wg = catalog.filter((c) => c.family === 'WG').map((c) => lightness(c.hex!));
+    expect(wg).toEqual([...wg].sort((a, b) => b - a));
   });
 
   it('los agregados quedan ordenados dentro de su familia', () => {
@@ -119,8 +131,8 @@ describe('catálogo derivado', () => {
   });
 
   it('permite HEX repetidos entre códigos distintos', () => {
-    const hexes = catalog.flatMap((c) => (c.hex ? [c.hex.toUpperCase()] : []));
-    expect(new Set(hexes).size).toBeLessThan(hexes.length);
+    const r1 = byId('R1')!;
+    expect(validateCatalog([r1, { ...r1, id: 'R99', number: '99', sourceLine: null }])).toEqual([]);
   });
 
   it('no quedan registros sin resolver', () => {

@@ -80,8 +80,8 @@ Antes de fijar versiones, revisar la documentación oficial vigente y respetar c
 - Columnas originales: `nombre,letra,numero,hex`.
 - El archivo contiene 203 registros. Tiene dos códigos sin letra: `120` (Black) y `0` (Colorless Blender). Preservarlos.
 - Las correcciones viven en `data/catalog-corrections.json` (exclusiones con alias, cambios, agregados, anotaciones) y cada una cita fuentes. `npm run catalog` genera `src/data/touch-colors.json`; nunca editarlo a mano.
-- Correcciones vigentes: se excluye `GY243` (alias → `G243`), `GY242` → `G242`, nombres de `GY174`, `GY233` y `Y44` (D-018), y se agregan `GY172`/`GY173` con HEX estimado; `Y44` también tiene HEX estimado (`hexEstimated: true`). Detalle en `docs/DATA_CATALOG.md`.
-- Los HEX son aproximaciones para pantalla, no mediciones oficiales certificadas.
+- Correcciones vigentes: se excluye `GY243` (alias → `G243`), `GY242` → `G242`, nombres de `GY174`, `GY233` y `Y44` (D-018), y se agregan `GY172`/`GY173`. Todos los HEX salen de la carta de colores de 204 (`chartHex`, D-019). Detalle en `docs/DATA_CATALOG.md`.
+- Los HEX son la versión digital de la carta de colores, no mediciones de la tinta.
 - Una corrección nueva necesita una fuente verificable. Si no hay HEX respaldado, usar `hex: null` o una estimación documentada con `hexEstimated: true`.
 
 ## Persistencia y backup
