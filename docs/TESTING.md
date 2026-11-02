@@ -15,7 +15,7 @@ La integración continua (`.github/workflows/ci.yml`) corre los tres en cada pus
 | `tests/catalog.test.ts` | Parseo del CSV (cabecera, campos, CRLF/BOM); catálogo válido y sincronizado con el JSON generado; valores de origen intactos; cada corrección con nota y fuentes definidas; 204 registros; alias; orden por familia; números como string; HEX repetidos permitidos; reglas de `hex: null` y `hexEstimated`. |
 | `tests/contrast.test.ts` | Fórmula de contraste WCAG y que todo color del catálogo tenga al menos 4.5:1 con su texto. |
 | `tests/filter.test.ts` | Búsqueda por código, número y nombre (sin mayúsculas ni acentos, con coma decimal); filtros de estado y familia, solos y combinados; limpiar la búsqueda conserva los demás filtros; orden del catálogo; progreso con total dinámico y catálogo vacío. |
-| `tests/inventory.test.ts` | Guardar y leer; solo se guardan IDs y versión; huérfanos conservados; datos dañados con copia de respaldo; almacenamiento bloqueado; migración de alias; exportar e importar copias, con rechazo de archivos inválidos. |
+| `tests/inventory.test.ts` | Guardar y leer cantidades; solo se guardan versión y código → cantidad; migración desde el formato v1 sin tocar la clave vieja; huérfanos conservados con su cantidad; datos dañados (incluidas cantidades inválidas) con copia de respaldo; almacenamiento bloqueado; migración de alias; exportar e importar copias v1 y v2, con rechazo de archivos inválidos. |
 
 La interfaz (`src/main.ts`) no tiene pruebas automáticas, a propósito: es una sola pantalla y se valida con el checklist manual de abajo. Si aparece un defecto que no se pueda cubrir razonablemente así, se puede evaluar agregar pruebas de navegador.
 
@@ -29,6 +29,14 @@ Antes de publicar una versión, o si tu cambio toca la interfaz, recorré esta l
 - [ ] Tocar una tarjeta la marca: aparecen el check y el borde, y el color no cambia. Volver a tocarla la desmarca.
 - [ ] El progreso y "Te faltan N colores" se actualizan al instante.
 - [ ] Recargar la página conserva lo marcado.
+
+### Cantidades
+
+- [ ] Al marcar un color aparece `− 1 +`; `+` suma, se refleja en "N marcadores en total" y sobrevive a recargar.
+- [ ] `−` en 1 desmarca el color y el foco vuelve a la tarjeta.
+- [ ] Desmarcar tocando la tarjeta un color con 2 o más ofrece **Deshacer**, que restaura la cantidad.
+- [ ] En 99, `+` queda deshabilitado.
+- [ ] Con datos de una versión anterior (clave `mis-touch:inventory:v1`), al abrir la app los colores marcados aparecen con 1 unidad.
 
 ### Búsqueda y filtros
 

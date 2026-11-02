@@ -6,6 +6,7 @@
 |---|---|
 | Catálogo de 204 colores con correcciones trazables | ✅ |
 | Cuadrícula, marcar/desmarcar, progreso | ✅ |
+| Cantidad por color (repetidos) | ✅ (sin publicar) |
 | Búsqueda y filtros combinables | ✅ |
 | Persistencia local tolerante a errores | ✅ |
 | Copias de seguridad (exportar/importar/vaciar) | ✅ |
@@ -28,8 +29,7 @@ Ayuda muy bienvenida, sobre todo pruebas en dispositivos reales:
 
 No comprometidas: se discuten en issues antes de implementarlas, y siempre respetando los principios del proyecto (sin backend, sin dependencias innecesarias).
 
-- **Carta oficial del fabricante** como fuente del catálogo, en lugar de listas de minoristas.
-- **Mejores HEX** para colores estimados o dudosos (GY172, GY173, Blue Gray y Green Gray).
+- **Filtro de repetidos** para ver de un vistazo qué colores tenés de más (por ejemplo, para intercambiar).
 - **Lista de compras**: compartir o copiar los códigos que faltan.
 - **Orden alternativo** (por número o por tono) como opción explícita, sin cambiar el orden por defecto.
 - **Otros catálogos** (TOUCH Brush u otras líneas), si se puede hacer sin complicar la app.

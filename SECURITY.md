@@ -2,7 +2,7 @@
 
 ## Qué datos maneja la app
 
-Mis Touch **no tiene servidor, cuentas ni analíticas**. Lo único que guarda es la lista de códigos de marcadores que marcaste, en el `localStorage` de tu navegador, bajo la clave `mis-touch:inventory:v1`. Las copias de seguridad son archivos JSON que descargás vos y no se envían a ningún lado.
+Mis Touch **no tiene servidor, cuentas ni analíticas**. Lo único que guarda es la lista de códigos de marcadores que marcaste y cuántas unidades tenés de cada uno, en el `localStorage` de tu navegador, bajo la clave `mis-touch:inventory:v2` (las versiones anteriores usaban `mis-touch:inventory:v1`). Las copias de seguridad son archivos JSON que descargás vos y no se envían a ningún lado.
 
 La app no hace pedidos de red a terceros: todos los archivos (scripts, estilos, íconos) se sirven desde el mismo sitio.
 

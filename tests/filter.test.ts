@@ -3,6 +3,7 @@ import type { DerivedCatalog } from '../src/catalog.ts';
 import data from '../src/data/touch-colors.json';
 import {
   computeProgress,
+  countMarkers,
   DEFAULT_FILTERS,
   hasActiveFilters,
   matchesFilters,
@@ -105,5 +106,12 @@ describe('progreso', () => {
 
   it('tolera catálogo vacío', () => {
     expect(computeProgress([], new Set())).toEqual({ owned: 0, missing: 0, total: 0, percent: 0 });
+  });
+
+  it('con cantidades, el progreso cuenta colores distintos y countMarkers suma unidades', () => {
+    const counts = new Map([['R1', 3], ['R2', 1], ['NO-EXISTE', 5]]);
+    expect(computeProgress(catalog, counts).owned).toBe(2);
+    expect(countMarkers(catalog, counts)).toBe(4);
+    expect(countMarkers(catalog, new Map())).toBe(0);
   });
 });

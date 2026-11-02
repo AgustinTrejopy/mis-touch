@@ -14,7 +14,7 @@ Mis Touch es una aplicación de **una sola pantalla**, construida con Vite + Typ
    ┌────────────────────────┼─────────────────────────┐
    │                        │                         │
 catálogo (inmutable)   estado de la UI          localStorage
-touch-colors.json      owned · filtros   ◄──►   mis-touch:inventory:v1
+touch-colors.json      owned · filtros   ◄──►   mis-touch:inventory:v2
    │                        │
    └──────────► vista derivada: tarjetas visibles, progreso
 ```
@@ -49,32 +49,35 @@ Reglas clave:
 
 ```ts
 const state = {
-  owned: Set<string>,     // única fuente de verdad de "lo tengo"
-  orphans: string[],      // IDs guardados que no existen en el catálogo actual
+  owned: Map<string, number>,    // código → unidades (1–99); única fuente de verdad de "lo tengo"
+  orphans: Map<string, number>,  // códigos guardados que no existen en el catálogo actual
   filters: { status: 'all' | 'owned' | 'missing', family: string | null, query: string },
 };
 ```
 
-Contadores, porcentaje y tarjetas visibles **se derivan** en cada render; no se guardan. Las tarjetas se crean una sola vez al iniciar y después solo se actualizan `hidden` y `aria-pressed`. Para unos 200 elementos no hace falta virtualización ni librerías de estado.
+Contadores, porcentaje, total de marcadores y tarjetas visibles **se derivan** en cada render; no se guardan. Las tarjetas se crean una sola vez al iniciar y después solo se actualizan `hidden`, `aria-pressed`, las etiquetas y el control de cantidad. Para unos 200 elementos no hace falta virtualización ni librerías de estado.
 
 ### Persistencia
 
 ```json
-{ "version": 1, "ownedIds": ["R1", "CG0.5", "120"] }
+{ "version": 2, "counts": { "R1": 3, "CG0.5": 1, "120": 1 } }
 ```
 
-- Clave: `mis-touch:inventory:v1`. Se guarda en cada toque.
+- Clave: `mis-touch:inventory:v2`. Se guarda en cada toque. Cada cantidad es un entero entre 1 y 99; un color sin entrada no se tiene.
+- Migración: si no existe `v2`, se lee `mis-touch:inventory:v1` (`{ "version": 1, "ownedIds": [...] }`) y cada código pasa a tener 1 unidad. La clave `v1` no se borra, así una versión vieja abierta en otra pestaña no pierde datos.
 - Lectura tolerante:
   - almacenamiento bloqueado → la app funciona en memoria y avisa;
   - JSON dañado → se copia en `…:corrupt` y se empieza vacío, con aviso;
   - IDs desconocidos → se conservan como huérfanos sin mostrarse (D-010);
-  - IDs retirados → se migran mediante `aliases`.
+  - IDs retirados → se migran mediante `aliases`; si el viejo y el vigente aparecen juntos, queda la cantidad mayor.
 
 ### Copias de seguridad
 
 ```json
-{ "app": "mis-touch", "backupVersion": 1, "exportedAt": "2026-01-01T12:00:00.000Z", "ownedIds": ["R1", "120"] }
+{ "app": "mis-touch", "backupVersion": 2, "exportedAt": "2026-01-01T12:00:00.000Z", "counts": { "R1": 3, "120": 1 } }
 ```
+
+También se aceptan copias `backupVersion: 1` (con `ownedIds`, sin cantidades): cada color entra con 1 unidad.
 
 Al exportar se descarga un `Blob`. Al importar se valida el archivo completo (tamaño, JSON, `app`, versión, tipos) **antes** de tocar la colección. Después se pide confirmación, y los códigos desconocidos se informan en ese diálogo.
 
@@ -89,11 +92,12 @@ Al exportar se descarga un `Blob`. Al importar se valida el archivo completo (ta
 - Sin pedidos de red a terceros: ni CDN, ni fuentes externas, ni analíticas.
 - Los datos del catálogo se insertan con `textContent` y creación de nodos, nunca con `innerHTML`.
 - Los colores se aplican como propiedades CSS (`--swatch`, `--ink`) solo después de validar el formato `#RRGGBB`.
-- Lo único que se guarda son códigos de marcadores.
+- Lo único que se guarda son códigos de marcadores y cuántas unidades tenés de cada uno.
 
 ## Accesibilidad
 
-- Cada tarjeta es un `<button>` con `aria-pressed` y un `aria-label` con código y nombre. Los nombres llevan `lang="en"`.
+- Cada tarjeta es un `<button>` con `aria-pressed` y un `aria-label` con código, nombre y, si hay repetidos, la cantidad. Los nombres llevan `lang="en"`.
+- El control de cantidad está junto al botón (no dentro) y sus botones tienen etiquetas propias.
 - El estado "lo tengo" se comunica con un check y un borde, no solo con color.
 - El texto sobre cada color supera 4.5:1 de contraste (verificado por test).
 - Foco visible, objetivos táctiles de 36–44 px y respeto por `prefers-reduced-motion`.

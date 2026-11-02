@@ -60,10 +60,11 @@ El código visible se forma como `letra + numero`, o solo `numero` si no hay let
 - El estado adquirido se marca con check/borde/indicador accesible.
 - No bajar saturación, opacidad ni alterar el color de fondo.
 - El estado persiste localmente.
+- **Cantidad (D-020):** cada color adquirido tiene una cantidad de unidades, entre 1 y 99. Al marcarlo empieza en 1 y aparece un control `− N +` en la tarjeta. `−` en 1 lo desmarca. Si se desmarca un color con 2 o más unidades, se ofrece deshacer.
 
 ### F-04 — Progreso
 
-Mostrar cantidad adquirida, total del catálogo activo, cantidad pendiente y porcentaje. Todo calculado desde el catálogo y el inventario actual. No hardcodear total 204.
+Mostrar cantidad adquirida, total del catálogo activo, cantidad pendiente y porcentaje. Todo calculado desde el catálogo y el inventario actual. No hardcodear total 204. El progreso cuenta colores distintos; si hay repetidos, se muestra además el total de marcadores.
 
 ### F-05 — Búsqueda
 
@@ -78,7 +79,7 @@ Buscar por código completo, letra, número o nombre. Debe ignorar mayúsculas/m
 
 ### F-07 — Backup
 
-Exportar un JSON con versión de formato, fecha de exportación y lista de IDs adquiridos. Importar con validación y confirmación antes de reemplazar la selección.
+Exportar un JSON con versión de formato, fecha de exportación y la cantidad de cada código adquirido. Importar con validación y confirmación antes de reemplazar la selección. Las copias anteriores, sin cantidades, se siguen pudiendo importar (cada color con 1 unidad).
 
 ### F-08 — PWA/offline
 

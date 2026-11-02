@@ -17,7 +17,8 @@
 
 - **Muestrario de los 204 colores** de la línea TOUCH Twin, cada uno con su código, número, nombre y color.
 - **Un toque para marcar** "lo tengo" o "me falta". El color nunca se atenúa: lo marcado se distingue con un check y un borde.
-- **Progreso de la colección**: cuántos tenés, cuántos te faltan y el porcentaje.
+- **Repetidos**: en los colores que tenés aparece un control `− 1 +` para anotar cuántas unidades tenés de cada uno.
+- **Progreso de la colección**: cuántos tenés, cuántos te faltan, el porcentaje y, si hay repetidos, el total de marcadores.
 - **Búsqueda** por código, número o nombre (sin importar mayúsculas ni acentos; acepta `0,5` o `0.5`).
 - **Filtros combinables**: `Todos`, `Los tengo`, `Me faltan` y por familia (R, RP, YR, Y, GY, G, BG, B, PB, P, BR, CG, WG, GG, F y sin familia).
 - **Funciona sin conexión** después de la primera carga.

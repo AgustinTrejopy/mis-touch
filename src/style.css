@@ -517,6 +517,81 @@ p {
   transform: scale(1);
 }
 
+/* ---------- Cantidad (solo en los colores que se tienen) ---------- */
+
+.tile-item {
+  container-type: inline-size;
+  position: relative;
+}
+
+/* Altura del control según el ancho de la tarjeta. Se define en px para que el nombre
+   (dentro de la tarjeta, con padding) y el control (fuera) usen exactamente el mismo valor. */
+.tile,
+.stepper {
+  --stepper-h: 26px;
+}
+
+@container (min-width: 88px) {
+  .tile,
+  .stepper {
+    --stepper-h: 30px;
+  }
+}
+
+/* El nombre se reduce a una línea para dejar lugar al control. */
+.tile[aria-pressed='true'] .tile-name {
+  margin-bottom: calc(var(--stepper-h) + 1px);
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+}
+
+/* Misma inversión que el check: fondo con el color del texto, signos con el color del marcador. */
+.stepper {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  display: flex;
+  align-items: stretch;
+  height: var(--stepper-h);
+  border-radius: var(--radius-control);
+  background: var(--ink);
+  color: var(--swatch);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.25);
+}
+
+.stepper-button {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-control);
+  background: none;
+  color: inherit;
+  font-size: clamp(15px, 22cqi, 20px);
+  font-weight: 700;
+  line-height: 1;
+  touch-action: manipulation;
+}
+
+.stepper-button:focus-visible {
+  outline-offset: 1px;
+}
+
+.stepper-button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.stepper-count {
+  align-self: center;
+  min-width: 1.6ch;
+  font-size: clamp(11px, 17cqi, 15px);
+  font-weight: 750;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
 .empty {
   display: grid;
   justify-items: center;

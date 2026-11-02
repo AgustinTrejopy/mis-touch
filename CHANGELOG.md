@@ -4,6 +4,15 @@ Todos los cambios relevantes del proyecto se registran acá. El formato sigue [K
 
 ## [Sin publicar]
 
+### Agregado
+
+- **Repetidos**: al marcar un color aparece un control `− 1 +` para anotar cuántas unidades tenés (hasta 99). El resumen muestra el total de marcadores cuando hay repetidos, y desmarcar un color con varias unidades ofrece **Deshacer**.
+
+### Cambiado
+
+- La colección se guarda en `mis-touch:inventory:v2` con la cantidad de cada color. Lo guardado por versiones anteriores se migra solo, con 1 unidad por color, sin borrar los datos viejos.
+- Las copias de seguridad pasan a la versión 2 (con cantidades). Las copias anteriores se siguen pudiendo importar.
+
 ### Catálogo
 
 - **Todos los colores se tomaron de la carta oficial de 204 colores** (D-019). La lista anterior usaba en su mayoría colores genéricos: 145 de 204 se veían distintos y 87 eran directamente otro color (por ejemplo `PB183 Phthalo Blue`, `PB73 Ultramarine Blue`, `B65 Ice Blue` y los grises `CG`, `WG` y `GG`, que se veían demasiado oscuros).

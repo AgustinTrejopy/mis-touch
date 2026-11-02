@@ -5,6 +5,7 @@ import { textColorFor } from './contrast.ts';
 import data from './data/touch-colors.json';
 import {
   computeProgress,
+  countMarkers,
   DEFAULT_FILTERS,
   hasActiveFilters,
   matchesFilters,
@@ -12,7 +13,16 @@ import {
   type Filters,
   type StatusFilter,
 } from './filter.ts';
-import { createBackup, getBrowserStorage, loadInventory, MAX_BACKUP_BYTES, parseBackup, saveInventory } from './inventory.ts';
+import {
+  createBackup,
+  getBrowserStorage,
+  loadInventory,
+  MAX_BACKUP_BYTES,
+  MAX_COUNT,
+  parseBackup,
+  saveInventory,
+  type Counts,
+} from './inventory.ts';
 
 /** Tamaño anunciado por las cartas TOUCH. Solo se usa para avisar la diferencia, nunca como denominador. */
 const ANNOUNCED_CATALOG_SIZE = 204;
@@ -77,15 +87,20 @@ const storage = getBrowserStorage();
 const loaded = loadInventory(storage, new Set(catalog.map((c) => c.id)), aliases);
 
 const state = {
+  /** Código → unidades. Única fuente de verdad de "lo tengo" y de los repetidos. */
   owned: loaded.owned,
-  /** IDs guardados que no existen en este catálogo; se conservan sin mostrarse. */
+  /** Códigos guardados que no existen en este catálogo; se conservan sin mostrarse. */
   orphans: loaded.orphans,
   filters: { ...DEFAULT_FILTERS } as Filters,
 };
 
+/** Entradas de la colección en orden de catálogo. */
+function ownedEntries(owned: Counts = state.owned): [string, number][] {
+  return catalog.filter((c) => owned.has(c.id)).map((c) => [c.id, owned.get(c.id)!]);
+}
+
 function persist(): void {
-  const ordered = catalog.filter((c) => state.owned.has(c.id)).map((c) => c.id);
-  if (!saveInventory(storage, ordered, state.orphans)) {
+  if (!saveInventory(storage, ownedEntries(), state.orphans)) {
     showNotice('No se pudieron guardar los cambios en este navegador. Seguís pudiendo usar la app, pero lo que marques se puede perder al cerrarla.');
   }
 }
@@ -97,16 +112,35 @@ function showNotice(message: string): void {
 
 // ---------- Cuadrícula ----------
 
-const tiles = new Map<string, { item: HTMLLIElement; button: HTMLButtonElement }>();
+interface Tile {
+  item: HTMLLIElement;
+  button: HTMLButtonElement;
+  label: string;
+  stepper: HTMLElement;
+  count: HTMLElement;
+  minus: HTMLButtonElement;
+  plus: HTMLButtonElement;
+}
+
+const tiles = new Map<string, Tile>();
 
 function displayCode(color: TouchColor): string {
   return color.family + color.number;
+}
+
+function stepButton(id: string, step: number, text: string): HTMLButtonElement {
+  const button = createElement('button', 'stepper-button', text) as HTMLButtonElement;
+  button.type = 'button';
+  button.dataset.id = id;
+  button.dataset.step = String(step);
+  return button;
 }
 
 function buildGrid(): void {
   const fragment = document.createDocumentFragment();
   for (const color of catalog) {
     const item = document.createElement('li');
+    item.className = 'tile-item';
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'tile';
@@ -115,7 +149,7 @@ function buildGrid(): void {
     button.style.setProperty('--swatch', swatch);
     button.style.setProperty('--ink', textColorFor(swatch));
     const noHex = color.hex === null ? ', color sin muestra verificada' : '';
-    button.setAttribute('aria-label', `${displayCode(color)}, ${color.name}${noHex}`);
+    const label = `${displayCode(color)}, ${color.name}${noHex}`;
     button.title = `${displayCode(color)} · ${color.name}${noHex ? ' (color sin muestra verificada)' : ''}`;
 
     const code = createElement('span', 'tile-code');
@@ -132,9 +166,20 @@ function buildGrid(): void {
       button.append(createElement('span', 'tile-no-hex-label', 'sin muestra'));
     }
     button.append(name, check);
-    item.append(button);
+
+    // Cantidad: hermano del botón (no se pueden anidar botones). Solo se ve en los colores que se tienen.
+    const stepper = createElement('div', 'stepper');
+    stepper.style.setProperty('--swatch', swatch);
+    stepper.style.setProperty('--ink', textColorFor(swatch));
+    const minus = stepButton(color.id, -1, '−');
+    const plus = stepButton(color.id, 1, '+');
+    const count = createElement('span', 'stepper-count');
+    count.setAttribute('aria-hidden', 'true');
+    stepper.append(minus, count, plus);
+
+    item.append(button, stepper);
     fragment.append(item);
-    tiles.set(color.id, { item, button });
+    tiles.set(color.id, { item, button, label, stepper, count, minus, plus });
   }
   ui.grid.append(fragment);
 }
@@ -183,11 +228,22 @@ function render(): void {
     const tile = tiles.get(color.id)!;
     const show = matchesFilters(color, owned, filters);
     tile.item.hidden = !show;
-    tile.button.setAttribute('aria-pressed', String(owned.has(color.id)));
     if (show) visible++;
+
+    const count = owned.get(color.id) ?? 0;
+    const code = displayCode(color);
+    tile.button.setAttribute('aria-pressed', String(count > 0));
+    tile.button.setAttribute('aria-label', count > 1 ? `${tile.label}, ${count} unidades` : tile.label);
+    tile.stepper.hidden = count === 0;
+    if (count === 0) continue;
+    tile.count.textContent = String(count);
+    tile.minus.setAttribute('aria-label', count === 1 ? `Desmarcar ${code}` : `Quitar una unidad de ${code} (tenés ${count})`);
+    tile.plus.setAttribute('aria-label', `Sumar una unidad de ${code} (tenés ${count})`);
+    tile.plus.disabled = count >= MAX_COUNT;
   }
 
   const progress = computeProgress(catalog, owned);
+  const markers = countMarkers(catalog, owned);
   ui.ownedCount.textContent = String(progress.owned);
   ui.totalCount.textContent = String(progress.total);
   ui.percent.textContent = `${progress.percent}%`;
@@ -195,10 +251,15 @@ function render(): void {
   ui.progress.setAttribute('aria-valuenow', String(progress.owned));
   ui.progress.setAttribute('aria-valuetext', `${progress.owned} de ${progress.total} colores`);
   ui.progressFill.style.setProperty('--progress', String(progress.total ? progress.owned / progress.total : 0));
-  ui.missingText.textContent =
+  ui.missingText.textContent = [
     progress.missing === 0 && progress.total > 0
       ? '¡Tenés todos los colores del catálogo!'
-      : `Te ${progress.missing === 1 ? 'falta' : 'faltan'} ${plural(progress.missing, 'color', 'colores')}`;
+      : `Te ${progress.missing === 1 ? 'falta' : 'faltan'} ${plural(progress.missing, 'color', 'colores')}`,
+    // El total físico solo aporta algo cuando hay repetidos.
+    markers > progress.owned ? `${markers} marcadores en total` : '',
+  ]
+    .filter(Boolean)
+    .join(' · ');
 
   const active = hasActiveFilters(filters);
   ui.resultsText.textContent = active ? `${visible} de ${plural(catalog.length, 'color', 'colores')}` : plural(catalog.length, 'color', 'colores');
@@ -230,22 +291,40 @@ function updateFilters(change: Partial<Filters>): void {
   keepResultsInView();
 }
 
-function toggle(id: string): void {
+/** Cambia las unidades de un color. 0 lo desmarca. */
+function setCount(id: string, requested: number): void {
   const color = catalog.find((c) => c.id === id);
-  if (!color) return;
-  const wasOwned = state.owned.has(id);
-  if (wasOwned) state.owned.delete(id);
-  else state.owned.add(id);
+  const tile = tiles.get(id);
+  if (!color || !tile) return;
+  const previous = state.owned.get(id) ?? 0;
+  const next = Math.min(MAX_COUNT, Math.max(0, requested));
+  if (next === previous) return;
+
+  // Si se desmarca desde el "−", el foco no puede quedar en un control que se oculta.
+  const focusInStepper = tile.stepper.contains(document.activeElement);
+  if (next === 0) state.owned.delete(id);
+  else state.owned.set(id, next);
   persist();
   render();
+  if (focusInStepper && next === 0 && !tile.item.hidden) tile.button.focus();
 
-  // Si el cambio hizo desaparecer la tarjeta de la vista filtrada, ofrecer deshacer.
-  if (tiles.get(id)!.item.hidden) {
-    showToast(`${displayCode(color)} ${color.name}: ${wasOwned ? 'pasó a “Me faltan”' : 'pasó a “Los tengo”'}`, {
-      label: 'Deshacer',
-      run: () => toggle(id),
-    });
+  const undo = { label: 'Deshacer', run: () => setCount(id, previous) };
+  const label = `${displayCode(color)} ${color.name}`;
+  if (tile.item.hidden) {
+    // El cambio hizo desaparecer la tarjeta de la vista filtrada.
+    showToast(`${label}: ${next === 0 ? 'pasó a “Me faltan”' : 'pasó a “Los tengo”'}`, undo);
+  } else if (next === 0 && previous > 1) {
+    // Un toque no debería borrar sin aviso una cantidad cargada.
+    showToast(`${label}: desmarcado (tenías ${previous}).`, undo);
   }
+}
+
+function toggle(id: string): void {
+  setCount(id, state.owned.has(id) ? 0 : 1);
+}
+
+function step(id: string, delta: number): void {
+  setCount(id, (state.owned.get(id) ?? 0) + delta);
 }
 
 // ---------- Toast y confirmación ----------
@@ -291,17 +370,24 @@ function localDate(date: Date): string {
   return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
 }
 
+/** "12 colores" o, si hay repetidos, "12 colores (15 marcadores)". */
+function describeCollection(owned: Counts): string {
+  const colors = plural(owned.size, 'color', 'colores');
+  const markers = [...owned.values()].reduce((sum, n) => sum + n, 0);
+  return markers > owned.size ? `${colors} (${markers} marcadores)` : colors;
+}
+
 function exportBackup(): void {
   const now = new Date();
-  const ids = catalog.filter((c) => state.owned.has(c.id)).map((c) => c.id);
-  const blob = new Blob([JSON.stringify(createBackup(ids, now), null, 2) + '\n'], { type: 'application/json' });
+  const entries = ownedEntries();
+  const blob = new Blob([JSON.stringify(createBackup(entries, now), null, 2) + '\n'], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
   link.download = `mis-touch-${localDate(now)}.json`;
   link.click();
   window.setTimeout(() => URL.revokeObjectURL(url), 10_000);
-  showToast(`Copia exportada con ${plural(ids.length, 'color', 'colores')}.`);
+  showToast(`Copia exportada con ${describeCollection(new Map(entries))}.`);
 }
 
 async function importBackup(file: File): Promise<void> {
@@ -323,36 +409,37 @@ async function importBackup(file: File): Promise<void> {
     return;
   }
 
-  const unknown = result.unknownIds.length
-    ? ` Además trae ${plural(result.unknownIds.length, 'código que no está', 'códigos que no están')} en este catálogo (${result.unknownIds.join(', ')}); no se van a mostrar.`
+  const unknownIds = [...result.unknown.keys()];
+  const unknown = unknownIds.length
+    ? ` Además trae ${plural(unknownIds.length, 'código que no está', 'códigos que no están')} en este catálogo (${unknownIds.join(', ')}); no se van a mostrar.`
     : '';
   const confirmed = await confirmAction(
     '¿Reemplazar tu colección?',
-    `La copia tiene ${plural(result.ids.length, 'color', 'colores')}.${unknown} Tu selección actual (${plural(state.owned.size, 'color', 'colores')}) se va a reemplazar.`,
+    `La copia tiene ${describeCollection(result.owned)}.${unknown} Tu colección actual (${describeCollection(state.owned)}) se va a reemplazar.`,
     'Reemplazar',
   );
   if (!confirmed) return;
 
-  state.owned = new Set(result.ids);
-  state.orphans = result.unknownIds;
+  state.owned = result.owned;
+  state.orphans = result.unknown;
   persist();
   render();
-  showToast(`Copia importada: ${plural(result.ids.length, 'color', 'colores')}.`);
+  showToast(`Copia importada: ${describeCollection(result.owned)}.`);
 }
 
 async function clearInventory(): Promise<void> {
-  if (state.owned.size === 0 && state.orphans.length === 0) {
+  if (state.owned.size === 0 && state.orphans.size === 0) {
     showToast('Tu colección ya está vacía.');
     return;
   }
   const confirmed = await confirmAction(
     '¿Vaciar tu colección?',
-    `Se van a desmarcar ${plural(state.owned.size, 'color', 'colores')}. No se puede deshacer; si querés, exportá una copia antes.`,
+    `Se van a desmarcar ${describeCollection(state.owned)}. No se puede deshacer; si querés, exportá una copia antes.`,
     'Vaciar',
   );
   if (!confirmed) return;
-  state.owned = new Set();
-  state.orphans = [];
+  state.owned = new Map();
+  state.orphans = new Map();
   persist();
   render();
   showToast('Colección vaciada.');
@@ -362,7 +449,13 @@ async function clearInventory(): Promise<void> {
 
 function bindEvents(): void {
   ui.grid.addEventListener('click', (event) => {
-    const button = (event.target as Element).closest<HTMLButtonElement>('.tile');
+    const target = event.target as Element;
+    const stepper = target.closest<HTMLButtonElement>('.stepper-button');
+    if (stepper?.dataset.id) {
+      step(stepper.dataset.id, Number(stepper.dataset.step));
+      return;
+    }
+    const button = target.closest<HTMLButtonElement>('.tile');
     if (button?.dataset.id) toggle(button.dataset.id);
   });
 

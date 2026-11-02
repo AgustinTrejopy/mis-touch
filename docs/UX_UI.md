@@ -58,6 +58,14 @@ Código más prominente que el nombre. Para los casos sin letra, mostrar `120` o
 - No aplicar `opacity`, grayscale, overlay opaco ni bajar saturación.
 - Usar `aria-pressed` o semántica equivalente para exponer el estado.
 
+### Cantidad (colores adquiridos)
+
+- Control `− N +` en la parte inferior de la tarjeta, con la misma inversión que el check: fondo del color del texto y signos del color del marcador.
+- Es un elemento hermano del botón de la tarjeta (no se anidan botones). Tocar el control no alterna la tarjeta.
+- Mientras se ve el control, el nombre se reduce a una línea; el nombre completo sigue en la etiqueta accesible.
+- Botones de al menos 24 × 24 px, incluso a 320 px de ancho, con etiquetas como "Sumar una unidad de R1 (tenés 3)".
+- `−` en 1 desmarca y devuelve el foco a la tarjeta. `+` se deshabilita en 99.
+
 ## 5. Grid responsive
 
 - Cuatro columnas en los teléfonos objetivo.

@@ -144,3 +144,18 @@ Las decisiones aceptadas se mantienen aquí. Para cambiar una decisión, agregar
   - La escala WG queda ordenada de claro a oscuro (verificado por test), igual que CG y GG.
   - La imagen de la carta no se incluye en el repositorio por ser material de terceros.
   - Los HEX siguen siendo la versión digital de la carta, no mediciones de la tinta.
+
+## D-020 — Cantidad por color (repetidos)
+
+- **Estado:** Aceptada (2026-11-02) a pedido del usuario. Modifica la regla de CLAUDE.md "guardar únicamente los IDs".
+- **Decisión:** además de marcar qué colores se tienen, cada color adquirido guarda cuántas unidades hay, entre 1 y 99.
+  - **Interfaz:** al marcar, la cantidad empieza en 1 y aparece un control `− N +` en la parte inferior de la tarjeta. `−` en 1 desmarca. Tocar la tarjeta sigue alternando "lo tengo" sin modal.
+  - **Datos:** el estado pasa de `Set<string>` a `Map<string, number>` y sigue siendo la única fuente de verdad. "Lo tengo" equivale a cantidad ≥ 1.
+  - **Progreso:** sigue contando colores distintos. El total de marcadores se deriva y solo se muestra si hay repetidos.
+- **Persistencia:**
+  - La clave nueva es `mis-touch:inventory:v2`, con `{ version: 2, counts }`.
+  - Si no existe, se migra desde `v1` con 1 unidad por color. La clave `v1` no se borra: una pestaña con la versión vieja (el service worker actualiza solo cuando se acepta) sigue leyendo sus datos en vez de tratarlos como dañados.
+  - Una cantidad inválida (no entera, menor que 1 o mayor que 99) hace que el dato se trate como dañado, con el mismo resguardo de siempre.
+- **Copias de seguridad:** `backupVersion: 2` con `counts`. Se siguen aceptando las copias `backupVersion: 1` (cada color con 1 unidad).
+- **Alias:** si un código retirado y su reemplazo aparecen juntos, describen el mismo marcador. Se queda la cantidad mayor en vez de sumarlas.
+- **Protección ante toques accidentales:** desmarcar tocando la tarjeta un color con 2 o más unidades muestra "Deshacer", que restaura la cantidad.

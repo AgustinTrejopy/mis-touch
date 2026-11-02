@@ -73,6 +73,7 @@ Antes de fijar versiones, revisar la documentación oficial vigente y respetar c
 - Familias iniciales según el catálogo: `R, RP, YR, Y, GY, G, BG, B, PB, P, BR, CG, WG, GG, F`. La interfaz debe derivarlas de los datos, no asumir que esta lista será siempre completa. Incluir una opción para códigos sin familia.
 - Búsqueda insensible a mayúsculas y acentos; buscar por código, número y nombre.
 - La acción principal es tocar un cuadrado para alternar su propiedad. No abrir un modal obligatorio para esta acción.
+- En los colores adquiridos, un control `− N +` en la tarjeta registra repetidos (empieza en 1; `−` en 1 desmarca). El progreso cuenta colores distintos.
 - El estado inicial será vacío. No usar 24 como cantidad inicial: fue un dato de ejemplo visual, no inventario real.
 
 ## Datos y catálogo
@@ -85,8 +86,8 @@ Antes de fijar versiones, revisar la documentación oficial vigente y respetar c
 - Una corrección nueva necesita una fuente verificable. Si no hay HEX respaldado, usar `hex: null` o una estimación documentada con `hexEstimated: true`.
 
 ## Persistencia y backup
-- Guardar únicamente los IDs de marcadores adquiridos en `localStorage`.
-- Definir una clave namespaced y versionada, por ejemplo `mis-touch:inventory:v1`.
+- Guardar únicamente los códigos de marcadores adquiridos y su cantidad (1–99) en `localStorage` (D-020). Nada de valores derivados.
+- Clave namespaced y versionada: `mis-touch:inventory:v2`. La clave `v1` (solo IDs) se lee una vez para migrar y no se borra.
 - Leer con validación y `try/catch`; tolerar storage bloqueado, JSON corrupto y IDs obsoletos.
 - Incluir exportación e importación de JSON como backup manual.
 - El importador debe validar estructura, versión y códigos existentes antes de modificar el inventario. Confirmar antes de reemplazar la selección actual.
