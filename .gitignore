@@ -1,0 +1,26 @@
+# Dependencias y builds
+node_modules
+dist
+dev-dist
+*.local
+*.tsbuildinfo
+
+# Entorno y sistema
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Material de trabajo local (prompts, bitácoras, imágenes de terceros): no se publica
+.internal/
+references/
+
+# Paquete Android y claves de firma: nunca en el repo (D-016)
+*.keystore
+*.jks
+signing-key-info.txt
+*.apk
+*.aab

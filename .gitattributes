@@ -1,0 +1,7 @@
+# Finales de línea LF en el repositorio, también en Windows.
+* text=auto eol=lf
+
+# La lista de origen del catálogo es inmutable: git no debe tocar ni un byte (su SHA-256 está documentado).
+data/source/*.csv -text
+
+*.png binary

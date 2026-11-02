@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run test
+      - run: npm run build
+      - name: El catálogo generado está al día
+        run: |
+          npm run catalog
+          git diff --exit-code src/data/touch-colors.json
+      - name: La lista de origen no se modificó
+        run: echo "8775aa57b9d98ac94b325aaedc07755646d545d80c42dcc0d363858028e2566f  data/source/touch-colors-original.csv" | sha256sum -c

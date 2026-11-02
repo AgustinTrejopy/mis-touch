@@ -1,0 +1,14 @@
+# Cabeceras para Netlify / Cloudflare Pages (formato _headers).
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+
+# Verificación del paquete Android (TWA, D-016).
+/.well-known/assetlinks.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+# El service worker y el HTML deben revalidarse siempre para que las actualizaciones lleguen.
+/sw.js
+  Cache-Control: no-cache
+/index.html
+  Cache-Control: no-cache

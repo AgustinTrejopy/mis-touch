@@ -1,0 +1,2092 @@
+{
+  "aliases": {
+    "GY243": "G243",
+    "GY242": "G242"
+  },
+  "colors": [
+    {
+      "id": "R1",
+      "family": "R",
+      "number": "1",
+      "name": "Wine Red",
+      "hex": "#8B0021",
+      "source": "user-csv",
+      "sourceLine": 2,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R2",
+      "family": "R",
+      "number": "2",
+      "name": "Old Red",
+      "hex": "#A4343A",
+      "source": "user-csv",
+      "sourceLine": 3,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R3",
+      "family": "R",
+      "number": "3",
+      "name": "Rose Red",
+      "hex": "#C22649",
+      "source": "user-csv",
+      "sourceLine": 4,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R4",
+      "family": "R",
+      "number": "4",
+      "name": "Vivid Red",
+      "hex": "#E6002B",
+      "source": "user-csv",
+      "sourceLine": 5,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R5",
+      "family": "R",
+      "number": "5",
+      "name": "Cherry Pink",
+      "hex": "#E8385D",
+      "source": "user-csv",
+      "sourceLine": 6,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R8",
+      "family": "R",
+      "number": "8",
+      "name": "Rose Pink",
+      "hex": "#F06292",
+      "source": "user-csv",
+      "sourceLine": 7,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R10",
+      "family": "R",
+      "number": "10",
+      "name": "Deep Red",
+      "hex": "#B71C1C",
+      "source": "user-csv",
+      "sourceLine": 8,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R11",
+      "family": "R",
+      "number": "11",
+      "name": "Carmine",
+      "hex": "#D81B3A",
+      "source": "user-csv",
+      "sourceLine": 9,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R12",
+      "family": "R",
+      "number": "12",
+      "name": "Coral Red",
+      "hex": "#E53935",
+      "source": "user-csv",
+      "sourceLine": 10,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R13",
+      "family": "R",
+      "number": "13",
+      "name": "Scarlet",
+      "hex": "#FF1744",
+      "source": "user-csv",
+      "sourceLine": 11,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R14",
+      "family": "R",
+      "number": "14",
+      "name": "Vermilion",
+      "hex": "#FF3D00",
+      "source": "user-csv",
+      "sourceLine": 12,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R15",
+      "family": "R",
+      "number": "15",
+      "name": "Geranium",
+      "hex": "#E57373",
+      "source": "user-csv",
+      "sourceLine": 13,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R16",
+      "family": "R",
+      "number": "16",
+      "name": "Coral Pink",
+      "hex": "#F48FB1",
+      "source": "user-csv",
+      "sourceLine": 14,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R18",
+      "family": "R",
+      "number": "18",
+      "name": "Peach",
+      "hex": "#FF8A80",
+      "source": "user-csv",
+      "sourceLine": 15,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R22",
+      "family": "R",
+      "number": "22",
+      "name": "French Vermilion",
+      "hex": "#D32F2F",
+      "source": "user-csv",
+      "sourceLine": 16,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R28",
+      "family": "R",
+      "number": "28",
+      "name": "Fruit Pink",
+      "hex": "#FF80AB",
+      "source": "user-csv",
+      "sourceLine": 17,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R131",
+      "family": "R",
+      "number": "131",
+      "name": "Skin White",
+      "hex": "#FFE0B2",
+      "source": "user-csv",
+      "sourceLine": 18,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R135",
+      "family": "R",
+      "number": "135",
+      "name": "Pale Cherry Pink",
+      "hex": "#F8BBD0",
+      "source": "user-csv",
+      "sourceLine": 19,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R136",
+      "family": "R",
+      "number": "136",
+      "name": "Blush",
+      "hex": "#FFCDD2",
+      "source": "user-csv",
+      "sourceLine": 20,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R139",
+      "family": "R",
+      "number": "139",
+      "name": "Flesh",
+      "hex": "#FFCCBC",
+      "source": "user-csv",
+      "sourceLine": 21,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "R140",
+      "family": "R",
+      "number": "140",
+      "name": "Light Orange",
+      "hex": "#FFB74D",
+      "source": "user-csv",
+      "sourceLine": 22,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP6",
+      "family": "RP",
+      "number": "6",
+      "name": "Vivid Pink",
+      "hex": "#F50057",
+      "source": "user-csv",
+      "sourceLine": 23,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP7",
+      "family": "RP",
+      "number": "7",
+      "name": "Cosmos",
+      "hex": "#EC407A",
+      "source": "user-csv",
+      "sourceLine": 24,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP9",
+      "family": "RP",
+      "number": "9",
+      "name": "Pale Pink",
+      "hex": "#F8BBD0",
+      "source": "user-csv",
+      "sourceLine": 25,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP17",
+      "family": "RP",
+      "number": "17",
+      "name": "Pastel Pink",
+      "hex": "#F48FB1",
+      "source": "user-csv",
+      "sourceLine": 26,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP86",
+      "family": "RP",
+      "number": "86",
+      "name": "Vivid Reddish Purple",
+      "hex": "#C2185B",
+      "source": "user-csv",
+      "sourceLine": 27,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP87",
+      "family": "RP",
+      "number": "87",
+      "name": "Azalea Purple",
+      "hex": "#D81B60",
+      "source": "user-csv",
+      "sourceLine": 28,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP89",
+      "family": "RP",
+      "number": "89",
+      "name": "Pale Purple",
+      "hex": "#E1BEE7",
+      "source": "user-csv",
+      "sourceLine": 29,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP137",
+      "family": "RP",
+      "number": "137",
+      "name": "Medium Pink",
+      "hex": "#F06292",
+      "source": "user-csv",
+      "sourceLine": 30,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP138",
+      "family": "RP",
+      "number": "138",
+      "name": "Light Pink",
+      "hex": "#FF80AB",
+      "source": "user-csv",
+      "sourceLine": 31,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP196",
+      "family": "RP",
+      "number": "196",
+      "name": "Pale Pink Light",
+      "hex": "#FCE4EC",
+      "source": "user-csv",
+      "sourceLine": 32,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP198",
+      "family": "RP",
+      "number": "198",
+      "name": "Tender Pink",
+      "hex": "#F8BBD0",
+      "source": "user-csv",
+      "sourceLine": 33,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP291",
+      "family": "RP",
+      "number": "291",
+      "name": "Primary Magenta",
+      "hex": "#E91E63",
+      "source": "user-csv",
+      "sourceLine": 34,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP292",
+      "family": "RP",
+      "number": "292",
+      "name": "Magenta Deep",
+      "hex": "#880E4F",
+      "source": "user-csv",
+      "sourceLine": 35,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "RP293",
+      "family": "RP",
+      "number": "293",
+      "name": "Dull Cosmos Purple",
+      "hex": "#AD1457",
+      "source": "user-csv",
+      "sourceLine": 36,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR21",
+      "family": "YR",
+      "number": "21",
+      "name": "Terra Cotta",
+      "hex": "#D84315",
+      "source": "user-csv",
+      "sourceLine": 37,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR23",
+      "family": "YR",
+      "number": "23",
+      "name": "Orange",
+      "hex": "#F7941D",
+      "source": "user-csv",
+      "sourceLine": 38,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR24",
+      "family": "YR",
+      "number": "24",
+      "name": "Marigold",
+      "hex": "#FF8F00",
+      "source": "user-csv",
+      "sourceLine": 39,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR25",
+      "family": "YR",
+      "number": "25",
+      "name": "Salmon Pink",
+      "hex": "#FFAB91",
+      "source": "user-csv",
+      "sourceLine": 40,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR26",
+      "family": "YR",
+      "number": "26",
+      "name": "Pastel Peach",
+      "hex": "#FFE0B2",
+      "source": "user-csv",
+      "sourceLine": 41,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR27",
+      "family": "YR",
+      "number": "27",
+      "name": "Powder Pink",
+      "hex": "#FFCCBC",
+      "source": "user-csv",
+      "sourceLine": 42,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR29",
+      "family": "YR",
+      "number": "29",
+      "name": "Barely Beige",
+      "hex": "#FFF3E0",
+      "source": "user-csv",
+      "sourceLine": 43,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR31",
+      "family": "YR",
+      "number": "31",
+      "name": "Dark Yellow",
+      "hex": "#FFA000",
+      "source": "user-csv",
+      "sourceLine": 44,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR32",
+      "family": "YR",
+      "number": "32",
+      "name": "Deep Yellow",
+      "hex": "#FFB300",
+      "source": "user-csv",
+      "sourceLine": 45,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR33",
+      "family": "YR",
+      "number": "33",
+      "name": "Melon Yellow",
+      "hex": "#FFCA28",
+      "source": "user-csv",
+      "sourceLine": 46,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR132",
+      "family": "YR",
+      "number": "132",
+      "name": "Milky White",
+      "hex": "#FFF8E1",
+      "source": "user-csv",
+      "sourceLine": 47,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR133",
+      "family": "YR",
+      "number": "133",
+      "name": "Baby Skin Pink",
+      "hex": "#FFE0B2",
+      "source": "user-csv",
+      "sourceLine": 48,
+      "verificationStatus": "cross-checked",
+      "note": "Ambas referencias confirman 'YR133 Baby Skin Pink'. 'Soft Peach' en una foto de referencia probablemente pertenece a un set no ShinHan.",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz"
+      ]
+    },
+    {
+      "id": "YR142",
+      "family": "YR",
+      "number": "142",
+      "name": "Pale Cream",
+      "hex": "#FFFDE7",
+      "source": "user-csv",
+      "sourceLine": 49,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "YR211",
+      "family": "YR",
+      "number": "211",
+      "name": "Tiger Lily",
+      "hex": "#FF6F00",
+      "source": "user-csv",
+      "sourceLine": 50,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y34",
+      "family": "Y",
+      "number": "34",
+      "name": "Yellow",
+      "hex": "#FFD600",
+      "source": "user-csv",
+      "sourceLine": 51,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y35",
+      "family": "Y",
+      "number": "35",
+      "name": "Lemon Yellow",
+      "hex": "#FFF200",
+      "source": "user-csv",
+      "sourceLine": 52,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y36",
+      "family": "Y",
+      "number": "36",
+      "name": "Cream",
+      "hex": "#FFF59D",
+      "source": "user-csv",
+      "sourceLine": 53,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y37",
+      "family": "Y",
+      "number": "37",
+      "name": "Pastel Yellow",
+      "hex": "#FFF59D",
+      "source": "user-csv",
+      "sourceLine": 54,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y38",
+      "family": "Y",
+      "number": "38",
+      "name": "Pale Yellow",
+      "hex": "#FFFDE7",
+      "source": "user-csv",
+      "sourceLine": 55,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y41",
+      "family": "Y",
+      "number": "41",
+      "name": "Olive Green",
+      "hex": "#827717",
+      "source": "user-csv",
+      "sourceLine": 56,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y42",
+      "family": "Y",
+      "number": "42",
+      "name": "Bronze Green",
+      "hex": "#9E9D24",
+      "source": "user-csv",
+      "sourceLine": 57,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y44",
+      "family": "Y",
+      "number": "44",
+      "name": "Fresh Green",
+      "hex": "#D4E157",
+      "source": "user-csv",
+      "sourceLine": 58,
+      "verificationStatus": "cross-checked",
+      "note": "Ambas referencias confirman 'Y44 Fresh Green'. La tapa amarilla '44 Golden Yellow' de una foto de referencia probablemente pertenece a un set no ShinHan.",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz"
+      ]
+    },
+    {
+      "id": "Y45",
+      "family": "Y",
+      "number": "45",
+      "name": "Canaria Yellow",
+      "hex": "#FFEE58",
+      "source": "user-csv",
+      "sourceLine": 59,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y49",
+      "family": "Y",
+      "number": "49",
+      "name": "Pastel Green",
+      "hex": "#C5E1A5",
+      "source": "user-csv",
+      "sourceLine": 60,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y141",
+      "family": "Y",
+      "number": "141",
+      "name": "Buttercup Yellow",
+      "hex": "#FFF176",
+      "source": "user-csv",
+      "sourceLine": 61,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y164",
+      "family": "Y",
+      "number": "164",
+      "name": "Anise",
+      "hex": "#EEFF41",
+      "source": "user-csv",
+      "sourceLine": 62,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y169",
+      "family": "Y",
+      "number": "169",
+      "name": "Putty",
+      "hex": "#E6EE9C",
+      "source": "user-csv",
+      "sourceLine": 63,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y221",
+      "family": "Y",
+      "number": "221",
+      "name": "Primary Yellow",
+      "hex": "#FFEB3B",
+      "source": "user-csv",
+      "sourceLine": 64,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y222",
+      "family": "Y",
+      "number": "222",
+      "name": "Golden Yellow",
+      "hex": "#FBC02D",
+      "source": "user-csv",
+      "sourceLine": 65,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y223",
+      "family": "Y",
+      "number": "223",
+      "name": "Straw Yellow",
+      "hex": "#FFF176",
+      "source": "user-csv",
+      "sourceLine": 66,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y224",
+      "family": "Y",
+      "number": "224",
+      "name": "Olive Pale",
+      "hex": "#C0CA33",
+      "source": "user-csv",
+      "sourceLine": 67,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "Y225",
+      "family": "Y",
+      "number": "225",
+      "name": "Olive Green Dark",
+      "hex": "#558B2F",
+      "source": "user-csv",
+      "sourceLine": 68,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY47",
+      "family": "GY",
+      "number": "47",
+      "name": "Grass Green",
+      "hex": "#7CB342",
+      "source": "user-csv",
+      "sourceLine": 69,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY48",
+      "family": "GY",
+      "number": "48",
+      "name": "Yellow Green",
+      "hex": "#9CCC65",
+      "source": "user-csv",
+      "sourceLine": 70,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY59",
+      "family": "GY",
+      "number": "59",
+      "name": "Pale Green",
+      "hex": "#DCEDC8",
+      "source": "user-csv",
+      "sourceLine": 71,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY163",
+      "family": "GY",
+      "number": "163",
+      "name": "Green Bice",
+      "hex": "#AED581",
+      "source": "user-csv",
+      "sourceLine": 72,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY166",
+      "family": "GY",
+      "number": "166",
+      "name": "Mignonette",
+      "hex": "#DCE775",
+      "source": "user-csv",
+      "sourceLine": 73,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY167",
+      "family": "GY",
+      "number": "167",
+      "name": "Pale Green Light",
+      "hex": "#F0F4C3",
+      "source": "user-csv",
+      "sourceLine": 74,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY172",
+      "family": "GY",
+      "number": "172",
+      "name": "Spectrum Green",
+      "hex": "#BDDEB3",
+      "hexEstimated": true,
+      "source": "verified-reference",
+      "sourceLine": null,
+      "verificationStatus": "cross-checked",
+      "note": "Ausente en el CSV y presente en ambas referencias. Ninguna fuente publica un HEX; se estimó a partir de la muestra de una imagen de producto (swatch-gy172).",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz",
+        "swatch-gy172"
+      ]
+    },
+    {
+      "id": "GY173",
+      "family": "GY",
+      "number": "173",
+      "name": "Dim Green",
+      "hex": "#F2F6D5",
+      "hexEstimated": true,
+      "source": "verified-reference",
+      "sourceLine": null,
+      "verificationStatus": "cross-checked",
+      "note": "Ausente en el CSV y presente en ambas referencias. Ninguna fuente publica un HEX; se estimó a partir de la muestra de una imagen de producto (swatch-gy173).",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz",
+        "swatch-gy173"
+      ]
+    },
+    {
+      "id": "GY174",
+      "family": "GY",
+      "number": "174",
+      "name": "Spring Dim Green",
+      "hex": "#C0CA33",
+      "source": "user-csv",
+      "sourceLine": 75,
+      "verificationStatus": "cross-checked",
+      "note": "El CSV dice 'Dim Lime'; ambas referencias dicen 'Spring Dim Green'.",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz"
+      ]
+    },
+    {
+      "id": "GY175",
+      "family": "GY",
+      "number": "175",
+      "name": "Lime Green",
+      "hex": "#CDDC39",
+      "source": "user-csv",
+      "sourceLine": 76,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY231",
+      "family": "GY",
+      "number": "231",
+      "name": "Seaweed Green",
+      "hex": "#33691E",
+      "source": "user-csv",
+      "sourceLine": 77,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY232",
+      "family": "GY",
+      "number": "232",
+      "name": "Grayish Green Pale",
+      "hex": "#C8E6C9",
+      "source": "user-csv",
+      "sourceLine": 78,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY233",
+      "family": "GY",
+      "number": "233",
+      "name": "Grayish Olive Green",
+      "hex": "#689F38",
+      "source": "user-csv",
+      "sourceLine": 79,
+      "verificationStatus": "cross-checked",
+      "note": "El CSV dice 'Grayish Olive'; ambas referencias dicen 'Grayish Olive Green'.",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz"
+      ]
+    },
+    {
+      "id": "GY234",
+      "family": "GY",
+      "number": "234",
+      "name": "Leaf Green",
+      "hex": "#8BC34A",
+      "source": "user-csv",
+      "sourceLine": 80,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY235",
+      "family": "GY",
+      "number": "235",
+      "name": "Sap Green",
+      "hex": "#558B2F",
+      "source": "user-csv",
+      "sourceLine": 81,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY236",
+      "family": "GY",
+      "number": "236",
+      "name": "Spring Green",
+      "hex": "#9CCC65",
+      "source": "user-csv",
+      "sourceLine": 82,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GY237",
+      "family": "GY",
+      "number": "237",
+      "name": "Willow Green",
+      "hex": "#AED581",
+      "source": "user-csv",
+      "sourceLine": 83,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G43",
+      "family": "G",
+      "number": "43",
+      "name": "Deep Olive Green",
+      "hex": "#33691E",
+      "source": "user-csv",
+      "sourceLine": 86,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G46",
+      "family": "G",
+      "number": "46",
+      "name": "Vivid Green",
+      "hex": "#4CAF50",
+      "source": "user-csv",
+      "sourceLine": 87,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G54",
+      "family": "G",
+      "number": "54",
+      "name": "Viridian",
+      "hex": "#00897B",
+      "source": "user-csv",
+      "sourceLine": 88,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G55",
+      "family": "G",
+      "number": "55",
+      "name": "Emerald Green",
+      "hex": "#2E7D32",
+      "source": "user-csv",
+      "sourceLine": 89,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G56",
+      "family": "G",
+      "number": "56",
+      "name": "Mint Green",
+      "hex": "#66BB6A",
+      "source": "user-csv",
+      "sourceLine": 90,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G58",
+      "family": "G",
+      "number": "58",
+      "name": "Mint Green Light",
+      "hex": "#A5D6A7",
+      "source": "user-csv",
+      "sourceLine": 91,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G241",
+      "family": "G",
+      "number": "241",
+      "name": "Grayish Green Deep",
+      "hex": "#1B5E20",
+      "source": "user-csv",
+      "sourceLine": 92,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "G242",
+      "family": "G",
+      "number": "242",
+      "name": "Cobalt Green Pale",
+      "hex": "#A5D6A7",
+      "source": "user-csv",
+      "sourceLine": 84,
+      "verificationStatus": "cross-checked",
+      "note": "El CSV dice GY242; ambas referencias listan G242 Cobalt Green Pale.",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz"
+      ]
+    },
+    {
+      "id": "G243",
+      "family": "G",
+      "number": "243",
+      "name": "Green Deep",
+      "hex": "#2E7D32",
+      "source": "user-csv",
+      "sourceLine": 93,
+      "verificationStatus": "cross-checked",
+      "note": "Prefijo G confirmado por ambas referencias. Reemplaza al duplicado GY243 del CSV.",
+      "references": [
+        "city-stationery",
+        "asphalt-kreatorz"
+      ]
+    },
+    {
+      "id": "BG1",
+      "family": "BG",
+      "number": "1",
+      "name": "Blue Gray 1",
+      "hex": "#ECEFF1",
+      "source": "user-csv",
+      "sourceLine": 94,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG3",
+      "family": "BG",
+      "number": "3",
+      "name": "Blue Gray 3",
+      "hex": "#CFD8DC",
+      "source": "user-csv",
+      "sourceLine": 95,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG5",
+      "family": "BG",
+      "number": "5",
+      "name": "Blue Gray 5",
+      "hex": "#90A4AE",
+      "source": "user-csv",
+      "sourceLine": 96,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG7",
+      "family": "BG",
+      "number": "7",
+      "name": "Blue Gray 7",
+      "hex": "#607D8B",
+      "source": "user-csv",
+      "sourceLine": 97,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG9",
+      "family": "BG",
+      "number": "9",
+      "name": "Blue Gray 9",
+      "hex": "#37474F",
+      "source": "user-csv",
+      "sourceLine": 98,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG50",
+      "family": "BG",
+      "number": "50",
+      "name": "Forest Green",
+      "hex": "#1B5E20",
+      "source": "user-csv",
+      "sourceLine": 99,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG51",
+      "family": "BG",
+      "number": "51",
+      "name": "Dark Green",
+      "hex": "#004D40",
+      "source": "user-csv",
+      "sourceLine": 100,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG52",
+      "family": "BG",
+      "number": "52",
+      "name": "Deep Green",
+      "hex": "#00695C",
+      "source": "user-csv",
+      "sourceLine": 101,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG53",
+      "family": "BG",
+      "number": "53",
+      "name": "Turquoise Green",
+      "hex": "#00897B",
+      "source": "user-csv",
+      "sourceLine": 102,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG57",
+      "family": "BG",
+      "number": "57",
+      "name": "Turquoise Green Light",
+      "hex": "#4DB6AC",
+      "source": "user-csv",
+      "sourceLine": 103,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG61",
+      "family": "BG",
+      "number": "61",
+      "name": "Peacock Green",
+      "hex": "#00796B",
+      "source": "user-csv",
+      "sourceLine": 104,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG178",
+      "family": "BG",
+      "number": "178",
+      "name": "Cool Shadow",
+      "hex": "#E0F2F1",
+      "source": "user-csv",
+      "sourceLine": 105,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG179",
+      "family": "BG",
+      "number": "179",
+      "name": "Aqua Mint",
+      "hex": "#B2DFDB",
+      "source": "user-csv",
+      "sourceLine": 106,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BG251",
+      "family": "BG",
+      "number": "251",
+      "name": "Verona Blue",
+      "hex": "#009688",
+      "source": "user-csv",
+      "sourceLine": 107,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B62",
+      "family": "B",
+      "number": "62",
+      "name": "Marine Blue",
+      "hex": "#0277BD",
+      "source": "user-csv",
+      "sourceLine": 108,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B63",
+      "family": "B",
+      "number": "63",
+      "name": "Cerulean Blue",
+      "hex": "#0288D1",
+      "source": "user-csv",
+      "sourceLine": 109,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B64",
+      "family": "B",
+      "number": "64",
+      "name": "Indian Blue",
+      "hex": "#01579B",
+      "source": "user-csv",
+      "sourceLine": 110,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B65",
+      "family": "B",
+      "number": "65",
+      "name": "Ice Blue",
+      "hex": "#E0F7FA",
+      "source": "user-csv",
+      "sourceLine": 111,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B66",
+      "family": "B",
+      "number": "66",
+      "name": "Baby Blue",
+      "hex": "#80D8FF",
+      "source": "user-csv",
+      "sourceLine": 112,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B67",
+      "family": "B",
+      "number": "67",
+      "name": "Pastel Blue",
+      "hex": "#80DEEA",
+      "source": "user-csv",
+      "sourceLine": 113,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B68",
+      "family": "B",
+      "number": "68",
+      "name": "Turquoise Blue",
+      "hex": "#00ACC1",
+      "source": "user-csv",
+      "sourceLine": 114,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B143",
+      "family": "B",
+      "number": "143",
+      "name": "Mint Blue",
+      "hex": "#E0F7FA",
+      "source": "user-csv",
+      "sourceLine": 115,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B171",
+      "family": "B",
+      "number": "171",
+      "name": "Jade Green",
+      "hex": "#26A69A",
+      "source": "user-csv",
+      "sourceLine": 116,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B182",
+      "family": "B",
+      "number": "182",
+      "name": "Frost Blue",
+      "hex": "#B2EBF2",
+      "source": "user-csv",
+      "sourceLine": 117,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B261",
+      "family": "B",
+      "number": "261",
+      "name": "Primary Cyan",
+      "hex": "#00ADEF",
+      "source": "user-csv",
+      "sourceLine": 118,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B262",
+      "family": "B",
+      "number": "262",
+      "name": "Cerulean Blue Light",
+      "hex": "#4FC3F7",
+      "source": "user-csv",
+      "sourceLine": 119,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "B263",
+      "family": "B",
+      "number": "263",
+      "name": "Peacock Blue",
+      "hex": "#0097A7",
+      "source": "user-csv",
+      "sourceLine": 120,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB69",
+      "family": "PB",
+      "number": "69",
+      "name": "Prussian Blue",
+      "hex": "#0D47A1",
+      "source": "user-csv",
+      "sourceLine": 121,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB70",
+      "family": "PB",
+      "number": "70",
+      "name": "Royal Blue",
+      "hex": "#1565C0",
+      "source": "user-csv",
+      "sourceLine": 122,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB71",
+      "family": "PB",
+      "number": "71",
+      "name": "Cobalt Blue",
+      "hex": "#1976D2",
+      "source": "user-csv",
+      "sourceLine": 123,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB72",
+      "family": "PB",
+      "number": "72",
+      "name": "Napoleon Blue",
+      "hex": "#1E88E5",
+      "source": "user-csv",
+      "sourceLine": 124,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB73",
+      "family": "PB",
+      "number": "73",
+      "name": "Ultramarine Blue",
+      "hex": "#2196F3",
+      "source": "user-csv",
+      "sourceLine": 125,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB74",
+      "family": "PB",
+      "number": "74",
+      "name": "Brilliant Blue",
+      "hex": "#42A5F5",
+      "source": "user-csv",
+      "sourceLine": 126,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB75",
+      "family": "PB",
+      "number": "75",
+      "name": "Dark Blue Light",
+      "hex": "#64B5F6",
+      "source": "user-csv",
+      "sourceLine": 127,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB76",
+      "family": "PB",
+      "number": "76",
+      "name": "Sky Blue",
+      "hex": "#90CAF9",
+      "source": "user-csv",
+      "sourceLine": 128,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB77",
+      "family": "PB",
+      "number": "77",
+      "name": "Pale Blue",
+      "hex": "#BBDEFB",
+      "source": "user-csv",
+      "sourceLine": 129,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB144",
+      "family": "PB",
+      "number": "144",
+      "name": "Pale Baby Blue",
+      "hex": "#E3F2FD",
+      "source": "user-csv",
+      "sourceLine": 130,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB183",
+      "family": "PB",
+      "number": "183",
+      "name": "Phthalo Blue",
+      "hex": "#0D47A1",
+      "source": "user-csv",
+      "sourceLine": 131,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB185",
+      "family": "PB",
+      "number": "185",
+      "name": "Pale Blue Light",
+      "hex": "#90CAF9",
+      "source": "user-csv",
+      "sourceLine": 132,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB271",
+      "family": "PB",
+      "number": "271",
+      "name": "Light Blue",
+      "hex": "#64B5F6",
+      "source": "user-csv",
+      "sourceLine": 133,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB272",
+      "family": "PB",
+      "number": "272",
+      "name": "Grayish Blue Pale",
+      "hex": "#C5CAE9",
+      "source": "user-csv",
+      "sourceLine": 134,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB273",
+      "family": "PB",
+      "number": "273",
+      "name": "Blue Berry",
+      "hex": "#283593",
+      "source": "user-csv",
+      "sourceLine": 135,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "PB274",
+      "family": "PB",
+      "number": "274",
+      "name": "Violet Dark",
+      "hex": "#1A237E",
+      "source": "user-csv",
+      "sourceLine": 136,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P81",
+      "family": "P",
+      "number": "81",
+      "name": "Deep Violet",
+      "hex": "#4A148C",
+      "source": "user-csv",
+      "sourceLine": 137,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P82",
+      "family": "P",
+      "number": "82",
+      "name": "Light Violet",
+      "hex": "#7B1FA2",
+      "source": "user-csv",
+      "sourceLine": 138,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P83",
+      "family": "P",
+      "number": "83",
+      "name": "Lavender",
+      "hex": "#9C27B0",
+      "source": "user-csv",
+      "sourceLine": 139,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P84",
+      "family": "P",
+      "number": "84",
+      "name": "Pastel Violet",
+      "hex": "#CE93D8",
+      "source": "user-csv",
+      "sourceLine": 140,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P85",
+      "family": "P",
+      "number": "85",
+      "name": "Vivid Purple",
+      "hex": "#AA00FF",
+      "source": "user-csv",
+      "sourceLine": 141,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P88",
+      "family": "P",
+      "number": "88",
+      "name": "Purple Gray",
+      "hex": "#7E57C2",
+      "source": "user-csv",
+      "sourceLine": 142,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P145",
+      "family": "P",
+      "number": "145",
+      "name": "Pale Lavender",
+      "hex": "#E1BEE7",
+      "source": "user-csv",
+      "sourceLine": 143,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P146",
+      "family": "P",
+      "number": "146",
+      "name": "Mauve Shadow",
+      "hex": "#D1C4E9",
+      "source": "user-csv",
+      "sourceLine": 144,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P147",
+      "family": "P",
+      "number": "147",
+      "name": "Pale Lilac",
+      "hex": "#F3E5F5",
+      "source": "user-csv",
+      "sourceLine": 145,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P281",
+      "family": "P",
+      "number": "281",
+      "name": "Violet",
+      "hex": "#673AB7",
+      "source": "user-csv",
+      "sourceLine": 146,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P282",
+      "family": "P",
+      "number": "282",
+      "name": "Peony Purple",
+      "hex": "#8E24AA",
+      "source": "user-csv",
+      "sourceLine": 147,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "P283",
+      "family": "P",
+      "number": "283",
+      "name": "Purple Deep",
+      "hex": "#4A148C",
+      "source": "user-csv",
+      "sourceLine": 148,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR91",
+      "family": "BR",
+      "number": "91",
+      "name": "Natural Oak",
+      "hex": "#795548",
+      "source": "user-csv",
+      "sourceLine": 149,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR92",
+      "family": "BR",
+      "number": "92",
+      "name": "Chocolate",
+      "hex": "#4E342E",
+      "source": "user-csv",
+      "sourceLine": 150,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR93",
+      "family": "BR",
+      "number": "93",
+      "name": "Burnt Orange",
+      "hex": "#D84315",
+      "source": "user-csv",
+      "sourceLine": 151,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR94",
+      "family": "BR",
+      "number": "94",
+      "name": "Brick Brown",
+      "hex": "#5D4037",
+      "source": "user-csv",
+      "sourceLine": 152,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR95",
+      "family": "BR",
+      "number": "95",
+      "name": "Burnt Sienna",
+      "hex": "#8D6E63",
+      "source": "user-csv",
+      "sourceLine": 153,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR96",
+      "family": "BR",
+      "number": "96",
+      "name": "Mahogany",
+      "hex": "#3E2723",
+      "source": "user-csv",
+      "sourceLine": 154,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR97",
+      "family": "BR",
+      "number": "97",
+      "name": "Rose Beige",
+      "hex": "#D7CCC8",
+      "source": "user-csv",
+      "sourceLine": 155,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR98",
+      "family": "BR",
+      "number": "98",
+      "name": "Chestnut Brown",
+      "hex": "#4E342E",
+      "source": "user-csv",
+      "sourceLine": 156,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR99",
+      "family": "BR",
+      "number": "99",
+      "name": "Bronze",
+      "hex": "#6D4C41",
+      "source": "user-csv",
+      "sourceLine": 157,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR100",
+      "family": "BR",
+      "number": "100",
+      "name": "Walnut",
+      "hex": "#3E2723",
+      "source": "user-csv",
+      "sourceLine": 158,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR101",
+      "family": "BR",
+      "number": "101",
+      "name": "Yellow Ochre",
+      "hex": "#F57F17",
+      "source": "user-csv",
+      "sourceLine": 159,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR102",
+      "family": "BR",
+      "number": "102",
+      "name": "Raw Umber",
+      "hex": "#4E342E",
+      "source": "user-csv",
+      "sourceLine": 160,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR103",
+      "family": "BR",
+      "number": "103",
+      "name": "Potato Brown",
+      "hex": "#8D6E63",
+      "source": "user-csv",
+      "sourceLine": 161,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR104",
+      "family": "BR",
+      "number": "104",
+      "name": "Brown Gray",
+      "hex": "#A1887F",
+      "source": "user-csv",
+      "sourceLine": 162,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR107",
+      "family": "BR",
+      "number": "107",
+      "name": "Sand",
+      "hex": "#FFE0B2",
+      "source": "user-csv",
+      "sourceLine": 163,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR109",
+      "family": "BR",
+      "number": "109",
+      "name": "Pearl White",
+      "hex": "#FAFAFA",
+      "source": "user-csv",
+      "sourceLine": 164,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR111",
+      "family": "BR",
+      "number": "111",
+      "name": "Brown",
+      "hex": "#6D4C41",
+      "source": "user-csv",
+      "sourceLine": 165,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR112",
+      "family": "BR",
+      "number": "112",
+      "name": "Leather Brown",
+      "hex": "#8D6E63",
+      "source": "user-csv",
+      "sourceLine": 166,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR113",
+      "family": "BR",
+      "number": "113",
+      "name": "Peanut",
+      "hex": "#FFE0B2",
+      "source": "user-csv",
+      "sourceLine": 167,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR114",
+      "family": "BR",
+      "number": "114",
+      "name": "Pale Camel",
+      "hex": "#FFCCBC",
+      "source": "user-csv",
+      "sourceLine": 168,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR115",
+      "family": "BR",
+      "number": "115",
+      "name": "Flax",
+      "hex": "#FFF8E1",
+      "source": "user-csv",
+      "sourceLine": 169,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR116",
+      "family": "BR",
+      "number": "116",
+      "name": "Clay",
+      "hex": "#D7CCC8",
+      "source": "user-csv",
+      "sourceLine": 170,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "BR134",
+      "family": "BR",
+      "number": "134",
+      "name": "Raw Silk",
+      "hex": "#FFFDE7",
+      "source": "user-csv",
+      "sourceLine": 171,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG0.5",
+      "family": "CG",
+      "number": "0.5",
+      "name": "Cool Gray 0.5",
+      "hex": "#F5F7FA",
+      "source": "user-csv",
+      "sourceLine": 172,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG1",
+      "family": "CG",
+      "number": "1",
+      "name": "Cool Gray 1",
+      "hex": "#E4E7EB",
+      "source": "user-csv",
+      "sourceLine": 173,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG2",
+      "family": "CG",
+      "number": "2",
+      "name": "Cool Gray 2",
+      "hex": "#CBD2D9",
+      "source": "user-csv",
+      "sourceLine": 174,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG3",
+      "family": "CG",
+      "number": "3",
+      "name": "Cool Gray 3",
+      "hex": "#9AA5B1",
+      "source": "user-csv",
+      "sourceLine": 175,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG4",
+      "family": "CG",
+      "number": "4",
+      "name": "Cool Gray 4",
+      "hex": "#7B8794",
+      "source": "user-csv",
+      "sourceLine": 176,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG5",
+      "family": "CG",
+      "number": "5",
+      "name": "Cool Gray 5",
+      "hex": "#616E7C",
+      "source": "user-csv",
+      "sourceLine": 177,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG6",
+      "family": "CG",
+      "number": "6",
+      "name": "Cool Gray 6",
+      "hex": "#525F7F",
+      "source": "user-csv",
+      "sourceLine": 178,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG7",
+      "family": "CG",
+      "number": "7",
+      "name": "Cool Gray 7",
+      "hex": "#323F4B",
+      "source": "user-csv",
+      "sourceLine": 179,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG8",
+      "family": "CG",
+      "number": "8",
+      "name": "Cool Gray 8",
+      "hex": "#1F2933",
+      "source": "user-csv",
+      "sourceLine": 180,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "CG9",
+      "family": "CG",
+      "number": "9",
+      "name": "Cool Gray 9",
+      "hex": "#121820",
+      "source": "user-csv",
+      "sourceLine": 181,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG0.5",
+      "family": "WG",
+      "number": "0.5",
+      "name": "Warm Gray 0.5",
+      "hex": "#FAF8F5",
+      "source": "user-csv",
+      "sourceLine": 182,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG1",
+      "family": "WG",
+      "number": "1",
+      "name": "Warm Gray 1",
+      "hex": "#F0ECE1",
+      "source": "user-csv",
+      "sourceLine": 183,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG2",
+      "family": "WG",
+      "number": "2",
+      "name": "Warm Gray 2",
+      "hex": "#E0DACE",
+      "source": "user-csv",
+      "sourceLine": 184,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG3",
+      "family": "WG",
+      "number": "3",
+      "name": "Warm Gray 3",
+      "hex": "#C7BFA6",
+      "source": "user-csv",
+      "sourceLine": 185,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG4",
+      "family": "WG",
+      "number": "4",
+      "name": "Warm Gray 4",
+      "hex": "#A39B8B",
+      "source": "user-csv",
+      "sourceLine": 186,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG5",
+      "family": "WG",
+      "number": "5",
+      "name": "Warm Gray 5",
+      "hex": "#7D7263",
+      "source": "user-csv",
+      "sourceLine": 187,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG6",
+      "family": "WG",
+      "number": "6",
+      "name": "Warm Gray 6",
+      "hex": "#63594C",
+      "source": "user-csv",
+      "sourceLine": 188,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG7",
+      "family": "WG",
+      "number": "7",
+      "name": "Warm Gray 7",
+      "hex": "#4D4337",
+      "source": "user-csv",
+      "sourceLine": 189,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG8",
+      "family": "WG",
+      "number": "8",
+      "name": "Warm Gray 8",
+      "hex": "#383027",
+      "source": "user-csv",
+      "sourceLine": 190,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "WG9",
+      "family": "WG",
+      "number": "9",
+      "name": "Warm Gray 9",
+      "hex": "#241F1A",
+      "source": "user-csv",
+      "sourceLine": 191,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GG1",
+      "family": "GG",
+      "number": "1",
+      "name": "Green Gray 1",
+      "hex": "#ECEFF1",
+      "source": "user-csv",
+      "sourceLine": 192,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GG3",
+      "family": "GG",
+      "number": "3",
+      "name": "Green Gray 3",
+      "hex": "#CFD8DC",
+      "source": "user-csv",
+      "sourceLine": 193,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GG5",
+      "family": "GG",
+      "number": "5",
+      "name": "Green Gray 5",
+      "hex": "#90A4AE",
+      "source": "user-csv",
+      "sourceLine": 194,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GG7",
+      "family": "GG",
+      "number": "7",
+      "name": "Green Gray 7",
+      "hex": "#607D8B",
+      "source": "user-csv",
+      "sourceLine": 195,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "GG9",
+      "family": "GG",
+      "number": "9",
+      "name": "Green Gray 9",
+      "hex": "#37474F",
+      "source": "user-csv",
+      "sourceLine": 196,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "F121",
+      "family": "F",
+      "number": "121",
+      "name": "Fluorescent Coral Red",
+      "hex": "#FF3D00",
+      "source": "user-csv",
+      "sourceLine": 197,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "F122",
+      "family": "F",
+      "number": "122",
+      "name": "Fluorescent Orange",
+      "hex": "#FF6D00",
+      "source": "user-csv",
+      "sourceLine": 198,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "F123",
+      "family": "F",
+      "number": "123",
+      "name": "Fluorescent Yellow",
+      "hex": "#EEFF41",
+      "source": "user-csv",
+      "sourceLine": 199,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "F124",
+      "family": "F",
+      "number": "124",
+      "name": "Fluorescent Green",
+      "hex": "#76FF03",
+      "source": "user-csv",
+      "sourceLine": 200,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "F125",
+      "family": "F",
+      "number": "125",
+      "name": "Fluorescent Rose",
+      "hex": "#FF4081",
+      "source": "user-csv",
+      "sourceLine": 201,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "F126",
+      "family": "F",
+      "number": "126",
+      "name": "Fluorescent Pink",
+      "hex": "#FF80AB",
+      "source": "user-csv",
+      "sourceLine": 202,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "120",
+      "family": "",
+      "number": "120",
+      "name": "Black",
+      "hex": "#000000",
+      "source": "user-csv",
+      "sourceLine": 203,
+      "verificationStatus": "provided"
+    },
+    {
+      "id": "0",
+      "family": "",
+      "number": "0",
+      "name": "Colorless Blender",
+      "hex": "#FFFFFF",
+      "source": "user-csv",
+      "sourceLine": 204,
+      "verificationStatus": "provided"
+    }
+  ]
+}

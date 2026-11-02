@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.netlify.marcadorestouchcheck.twa",
+        "sha256_cert_fingerprints": ["6D:C7:70:97:B9:3F:E9:BD:97:89:93:D1:B8:E3:D6:E5:98:49:6D:41:FE:20:9B:B2:8B:7B:27:D1:67:46:8E:CA"]
+      }
+    }]

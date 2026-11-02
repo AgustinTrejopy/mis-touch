@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Tu colección de marcadores TOUCH: marcá cuáles tenés y cuáles te faltan." />
+    <meta name="theme-color" content="#F7F6F2" />
+    <title>Mis Touch</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="masthead">
+        <h1 class="title">Mis Touch</h1>
+        <p class="subtitle">Mi colección de colores</p>
+      </header>
+
+      <p class="notice" id="storage-notice" role="alert" hidden></p>
+
+      <section class="summary" aria-labelledby="summary-heading">
+        <h2 class="visually-hidden" id="summary-heading">Progreso de la colección</h2>
+        <div class="summary-row">
+          <p class="summary-count"><strong id="owned-count">0</strong> de <span id="total-count">0</span> colores</p>
+          <p class="summary-percent" id="percent">0%</p>
+        </div>
+        <div class="progress" id="progress" role="progressbar" aria-labelledby="summary-heading" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0">
+          <span class="progress-fill" id="progress-fill"></span>
+        </div>
+        <p class="summary-missing" id="missing-text"></p>
+      </section>
+
+      <div class="toolbar">
+        <div class="search" role="search">
+          <label class="visually-hidden" for="search">Buscar código o nombre</label>
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" /><path d="m16 16 4 4" /></svg>
+          <input id="search" type="search" placeholder="Buscar código o nombre…" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search" />
+          <button type="button" class="search-clear" id="search-clear" aria-label="Limpiar búsqueda" hidden>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 7 10 10M17 7 7 17" /></svg>
+          </button>
+        </div>
+
+        <div class="segmented" role="group" aria-label="Filtrar por estado">
+          <button type="button" data-status="all" aria-pressed="true">Todos</button>
+          <button type="button" data-status="owned" aria-pressed="false">Los tengo</button>
+          <button type="button" data-status="missing" aria-pressed="false">Me faltan</button>
+        </div>
+
+        <div class="chips" id="family-filters" role="group" aria-label="Filtrar por familia"></div>
+      </div>
+
+      <main class="content">
+        <div class="results">
+          <p id="results-text" aria-live="polite"></p>
+          <button type="button" class="link-button" id="reset-filters" hidden>Quitar filtros</button>
+        </div>
+
+        <p class="boot" id="boot-message">Cargando colores… Si este mensaje no desaparece, revisá la conexión y volvé a cargar la página.</p>
+        <noscript><p class="boot">Mis Touch necesita JavaScript activado para funcionar.</p></noscript>
+
+        <ul class="grid" id="grid" aria-label="Marcadores"></ul>
+
+        <div class="empty" id="empty" hidden>
+          <p class="empty-title" id="empty-text">No hay colores que coincidan.</p>
+          <div class="empty-actions">
+            <button type="button" class="button" id="empty-clear-search">Limpiar búsqueda</button>
+            <button type="button" class="button" id="empty-show-all">Ver todos los colores</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <section class="panel" aria-labelledby="backup-heading">
+          <h2 id="backup-heading">Copia de seguridad</h2>
+          <p>Tu colección se guarda solo en este navegador y en este dispositivo. Si borrás los datos del navegador o cambiás de teléfono, se pierde. Exportá una copia de vez en cuando.</p>
+          <div class="panel-actions">
+            <button type="button" class="button" id="export">Exportar copia</button>
+            <button type="button" class="button" id="import">Importar copia</button>
+            <input type="file" id="import-file" accept="application/json,.json" hidden />
+            <button type="button" class="button button-danger" id="clear">Vaciar colección</button>
+          </div>
+        </section>
+
+        <section class="panel" aria-labelledby="catalog-heading">
+          <h2 id="catalog-heading">Sobre el catálogo</h2>
+          <p id="catalog-text"></p>
+          <p>Los colores en pantalla son aproximados: dependen del brillo y la calibración de cada pantalla y no reemplazan a la tinta real.</p>
+        </section>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden>
+      <span id="toast-text"></span>
+      <button type="button" class="toast-action" id="toast-action" hidden></button>
+    </div>
+
+    <dialog class="dialog" id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-text">
+      <form method="dialog">
+        <h2 id="confirm-title"></h2>
+        <p id="confirm-text"></p>
+        <div class="dialog-actions">
+          <button class="button" value="cancel" autofocus>Cancelar</button>
+          <button class="button button-primary" value="confirm" id="confirm-ok"></button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

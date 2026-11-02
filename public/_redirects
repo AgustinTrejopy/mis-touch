@@ -1,0 +1,3 @@
+# Netlify Drop (arrastrar carpeta) omite carpetas que empiezan con punto, como .well-known.
+# Esta regla sirve la copia de la raíz en la ruta que verifica Android (D-016).
+/.well-known/assetlinks.json  /assetlinks.json  200
