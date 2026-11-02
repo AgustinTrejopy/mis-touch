@@ -8,7 +8,7 @@
   <img src="docs/images/screenshot-mobile.png" alt="Pantalla principal de Mis Touch: progreso de la colección, buscador, filtros y cuadrícula de colores con algunos marcados" width="320">
 </p>
 
-[![CI](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
+[![CI](https://github.com/AgustinTrejopy/mis-touch/actions/workflows/ci.yml/badge.svg)](https://github.com/AgustinTrejopy/mis-touch/actions/workflows/ci.yml)
 ![Licencia MIT](https://img.shields.io/badge/licencia-MIT-green)
 
 ---
@@ -65,8 +65,8 @@ Detalles, fuentes y cómo proponer una corrección: [docs/DATA_CATALOG.md](docs/
 ### Puesta en marcha
 
 ```bash
-git clone https://github.com/OWNER/REPO.git
-cd REPO
+git clone https://github.com/AgustinTrejopy/mis-touch.git
+cd mis-touch
 npm install
 npm run dev
 ```

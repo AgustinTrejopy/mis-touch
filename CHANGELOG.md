@@ -28,5 +28,5 @@ Primera versión pública.
 - `GY242` pasó a `G242 Cobalt Green Pale`.
 - Nombres corregidos: `GY174 Spring Dim Green`, `GY233 Grayish Olive Green`.
 
-[Sin publicar]: https://github.com/OWNER/REPO/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/OWNER/REPO/releases/tag/v0.1.0
+[Sin publicar]: https://github.com/AgustinTrejopy/mis-touch/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/AgustinTrejopy/mis-touch/releases/tag/v0.1.0
