@@ -88,8 +88,14 @@ describe('catálogo derivado', () => {
     expect(byId('GY173')).toMatchObject({ hex: '#F2F6D5', hexEstimated: true, source: 'verified-reference', sourceLine: null });
     expect(byId('GY172')!.references).toContain('swatch-gy172');
     expect(byId('GY173')!.references).toContain('swatch-gy173');
-    expect(catalog.filter((c) => c.hexEstimated).map((c) => c.id)).toEqual(['GY172', 'GY173']);
+    expect(catalog.filter((c) => c.hexEstimated).map((c) => c.id)).toEqual(['Y44', 'GY172', 'GY173']);
     expect(catalog.filter((c) => c.hex === null)).toEqual([]);
+  });
+
+  it('Y44: nombre del marcador físico y HEX estimado desde imagen, sin cambiar el código', () => {
+    expect(byId('Y44')).toMatchObject({ name: 'Fresh Yellow', hex: '#E0BF00', hexEstimated: true, source: 'user-csv', verificationStatus: 'provided' });
+    expect(byId('Y44')!.references).toEqual(expect.arrayContaining(['physical-marker-y44', 'swatch-y44']));
+    expect(aliases.Y44).toBeUndefined();
   });
 
   it('los agregados quedan ordenados dentro de su familia', () => {
@@ -161,7 +167,7 @@ describe('validateCatalog', () => {
     expect(validateCatalog([{ ...base, hex: null, source: 'verified-reference', sourceLine: null }])).toEqual([]);
   });
 
-  it('HEX estimado solo en registros agregados con HEX', () => {
+  it('HEX estimado solo en registros agregados o corregidos con HEX', () => {
     expect(validateCatalog([{ ...base, hexEstimated: true }]).join()).toMatch(/estimado/);
     expect(validateCatalog([{ ...base, hex: null, hexEstimated: true, source: 'verified-reference', sourceLine: null }]).join()).toMatch(/estimado/);
   });

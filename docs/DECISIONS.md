@@ -125,3 +125,10 @@ Las decisiones aceptadas se mantienen aquí. Para cambiar una decisión, agregar
   - Las claves de firma del paquete Android y los `.apk`/`.aab` están en `.gitignore`.
   - El README aclara que el proyecto no está afiliado a ShinHan Art.
 - **Commits:** sin firmas ni coautorías de herramientas de IA.
+
+## D-018 — Y44 se llama "Fresh Yellow"
+
+- **Estado:** Aceptada (2026-11-02) por decisión del mantenedor.
+- **Contexto:** la lista de origen y las dos tiendas de referencia nombran al 44 `Y44 Fresh Green`. El marcador físico de la colección de la persona usuaria dice `Fresh Yellow`.
+- **Decisión:** se usa `Fresh Yellow`, priorizando el marcador físico que existe en la colección. Queda como cambio trazado en `data/catalog-corrections.json`, con estado `provided` (no `cross-checked`) y una nota que deja explícita la contradicción con las tiendas.
+- **Color:** el HEX de origen (`#D4E157`, verde lima) se reemplaza por `#E0BF00` (amarillo mostaza), estimado desde la muestra de una imagen de producto (`hexEstimated: true`). Para eso las correcciones de tipo `changes` admiten ahora el campo `hex`.

@@ -18,6 +18,14 @@
     "swatch-gy173": {
       "description": "Imagen de producto (muestra 'GY173 Dim Green' junto a un TOUCH Twin ShinHan Art) de una tienda; no incluida en el repositorio por ser de terceros. HEX = promedio de tres zonas sin texto de la muestra: #F2F6D5 en las tres.",
       "accessed": "2026-11-01"
+    },
+    "physical-marker-y44": {
+      "description": "Marcador físico de la colección de la persona usuaria: la tapa del 44 dice 'Fresh Yellow'. Sin foto en el repositorio.",
+      "accessed": "2026-11-02"
+    },
+    "swatch-y44": {
+      "description": "Imagen de producto oficial (muestra 'Y44 FRESH GREEN' junto a un TOUCH Twin ShinHan Art) aportada por la persona usuaria; no incluida en el repositorio por ser de terceros. HEX = promedio de cuatro zonas sin texto de la muestra: #E0BF00 en las cuatro.",
+      "accessed": "2026-11-02"
     }
   },
   "exclusions": [
@@ -61,6 +69,25 @@
         "city-stationery",
         "asphalt-kreatorz"
       ]
+    },
+    {
+      "id": "Y44",
+      "field": "name",
+      "value": "Fresh Yellow",
+      "note": "El CSV y las tiendas dicen 'Fresh Green'; el marcador físico de la colección de la persona usuaria dice 'Fresh Yellow'. Se prioriza el marcador físico por decisión del mantenedor (D-018).",
+      "references": [
+        "physical-marker-y44"
+      ]
+    },
+    {
+      "id": "Y44",
+      "field": "hex",
+      "value": "#E0BF00",
+      "hexEstimated": true,
+      "note": "El CSV dice #D4E157 (verde lima); la muestra de la imagen de producto es un amarillo mostaza #E0BF00.",
+      "references": [
+        "swatch-y44"
+      ]
     }
   ],
   "additions": [
@@ -103,9 +130,11 @@
     },
     {
       "id": "Y44",
-      "verificationStatus": "cross-checked",
-      "note": "Ambas referencias confirman 'Y44 Fresh Green'. La tapa amarilla '44 Golden Yellow' de una foto de referencia probablemente pertenece a un set no ShinHan.",
+      "verificationStatus": "provided",
+      "note": "Nombre 'Fresh Yellow' tomado del marcador físico de la persona usuaria (D-018). Contradice a las tiendas, que listan 'Y44 Fresh Green'. HEX #E0BF00 estimado desde la muestra de una imagen de producto (el CSV decía #D4E157, verde lima).",
       "references": [
+        "physical-marker-y44",
+        "swatch-y44",
         "city-stationery",
         "asphalt-kreatorz"
       ]

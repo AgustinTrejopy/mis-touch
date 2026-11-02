@@ -4,6 +4,10 @@ Todos los cambios relevantes del proyecto se registran acá. El formato sigue [K
 
 ## [Sin publicar]
 
+### Catálogo
+
+- `Y44` pasa a llamarse `Fresh Yellow`, como dice el marcador físico (las tiendas lo listan como `Fresh Green`; ver D-018), y su color cambia de verde lima a amarillo mostaza (`#E0BF00`, estimado desde una imagen de producto).
+
 ## [0.1.0] — 2026-11-01
 
 Primera versión pública.

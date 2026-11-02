@@ -37,7 +37,15 @@ export interface TouchColor {
 
 export interface CatalogCorrections {
   annotations?: { id: string; verificationStatus: VerificationStatus; note: string; references?: string[] }[];
-  changes?: { id: string; field: 'family' | 'name'; value: string; note: string; references: string[] }[];
+  changes?: {
+    id: string;
+    field: 'family' | 'name' | 'hex';
+    value: string;
+    /** Solo para `field: 'hex'`: el valor se estimó desde una imagen. */
+    hexEstimated?: boolean;
+    note: string;
+    references: string[];
+  }[];
   exclusions?: { id: string; aliasOf: string; note: string; references: string[] }[];
   additions?: {
     family: string;
@@ -113,6 +121,7 @@ export function buildCatalog(rows: readonly SourceRow[], corrections: CatalogCor
   for (const change of corrections.changes ?? []) {
     const color = find(change.id);
     color[change.field] = change.value;
+    if (change.field === 'hex' && change.hexEstimated) color.hexEstimated = true;
     const newId = color.family + color.number;
     if (newId !== change.id) aliases[change.id] = newId;
     color.id = newId;
@@ -177,8 +186,8 @@ export function validateCatalog(colors: readonly TouchColor[]): string[] {
       errors.push(`${where}: HEX inválido "${color.hex}"`);
     }
     if (color.hex === null && color.source === 'user-csv') errors.push(`${where}: falta el HEX de la fuente`);
-    if (color.hexEstimated && (color.hex === null || color.source === 'user-csv')) {
-      errors.push(`${where}: HEX estimado solo vale para registros agregados con un HEX`);
+    if (color.hexEstimated && (color.hex === null || (color.source === 'user-csv' && !color.references))) {
+      errors.push(`${where}: HEX estimado solo vale para registros agregados o corregidos con un HEX`);
     }
     if (color.id !== color.family + color.number) errors.push(`${where}: el código no coincide con familia + número`);
     if (seen.has(color.id)) errors.push(`${where}: código duplicado`);

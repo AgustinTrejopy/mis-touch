@@ -68,7 +68,8 @@ La lista de origen tenía 203 registros. Se contrastó con dos listas comerciale
 | `GY233` | Nombre `Grayish Olive` → `Grayish Olive Green` | Ambas fuentes coinciden. |
 | — | Se agrega `GY172 Spectrum Green` (`#BDDEB3`, estimado) | Ausente en el origen, presente en ambas fuentes. |
 | — | Se agrega `GY173 Dim Green` (`#F2F6D5`, estimado) | Ausente en el origen, presente en ambas fuentes. |
-| `G243`, `Y44`, `YR133` | Sin cambios; `cross-checked` | Ambas fuentes confirman el dato de origen. |
+| `Y44` | Nombre `Fresh Green` → `Fresh Yellow`; HEX `#D4E157` → `#E0BF00` (estimado); estado `provided` | El nombre lo dice el marcador físico de la persona usuaria (`physical-marker-y44`) y **contradice a ambas fuentes**, que listan `Fresh Green`; se aplica por decisión del mantenedor (D-018). El HEX de origen era un verde lima; la muestra de la imagen de producto (`swatch-y44`) es amarillo mostaza. |
+| `G243`, `YR133` | Sin cambios; `cross-checked` | Ambas fuentes confirman el dato de origen. |
 
 Cuenta: 203 − 1 + 2 = **204**.
 
@@ -82,6 +83,7 @@ Ninguna fuente publica un HEX para `GY172` y `GY173`. Sus colores se estimaron p
 |---|---|---|
 | GY172 Spectrum Green | `#BDDEB3`, `#BEDDB3`, `#BCDFB3` | `#BDDEB3` |
 | GY173 Dim Green | `#F2F6D5` (×3) | `#F2F6D5` |
+| Y44 Fresh Yellow | `#E0BF00` (×4) | `#E0BF00` (reemplaza el `#D4E157` de origen) |
 
 Quedan marcados con `hexEstimated: true`, y la app lo aclara en la sección "Sobre el catálogo". Las imágenes no se incluyen en el repositorio porque pertenecen a terceros.
 
@@ -106,7 +108,7 @@ Abrí un issue con la plantilla **Corrección del catálogo**, o mandá un pull 
    | Sección | Para qué | Campos |
    |---|---|---|
    | `exclusions` | Quitar un registro (duplicado o inexistente) | `id`, `aliasOf`, `note`, `references` |
-   | `changes` | Cambiar `family` o `name` de un registro | `id`, `field`, `value`, `note`, `references` |
+   | `changes` | Cambiar `family`, `name` o `hex` de un registro | `id`, `field`, `value`, `note`, `references` (y `hexEstimated: true` si el HEX sale de una imagen) |
    | `additions` | Agregar un color que falta | `family`, `number`, `name`, `hex`, `hexEstimated?`, `note`, `references` |
    | `annotations` | Marcar un registro como verificado o dudoso, sin cambiar valores | `id`, `verificationStatus`, `note`, `references?` |
 

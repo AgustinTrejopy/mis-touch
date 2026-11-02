@@ -573,16 +573,19 @@
       "id": "Y44",
       "family": "Y",
       "number": "44",
-      "name": "Fresh Green",
-      "hex": "#D4E157",
+      "name": "Fresh Yellow",
+      "hex": "#E0BF00",
       "source": "user-csv",
       "sourceLine": 58,
-      "verificationStatus": "cross-checked",
-      "note": "Ambas referencias confirman 'Y44 Fresh Green'. La tapa amarilla '44 Golden Yellow' de una foto de referencia probablemente pertenece a un set no ShinHan.",
+      "verificationStatus": "provided",
+      "note": "Nombre 'Fresh Yellow' tomado del marcador físico de la persona usuaria (D-018). Contradice a las tiendas, que listan 'Y44 Fresh Green'. HEX #E0BF00 estimado desde la muestra de una imagen de producto (el CSV decía #D4E157, verde lima).",
       "references": [
+        "physical-marker-y44",
+        "swatch-y44",
         "city-stationery",
         "asphalt-kreatorz"
-      ]
+      ],
+      "hexEstimated": true
     },
     {
       "id": "Y45",
